@@ -1,0 +1,135 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    /* font-family: helvetica, sans-serif;
+    font-size: var(--font-size-m);
+    line-height: var(--line-height); */
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+a:link, a:visited, a:hover, a:active{
+  text-decoration: none;
+  color:black;
+}
+a:hover{
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+nav{
+  width: 10%;
+  index:999;
+  padding-left: 6px;
+  flex:1;
+  flex-basis: 18%;
+  overflow: none;
+}
+
+nav > ul.menu {
+  list-style-type: none;
+}
+
+li{
+  color:black;
+  font-family: 'Ubuntu Mono', monospace;
+  font-size: 0.9em;
+}
+li:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+nav .year{
+  padding-bottom: 7px;
+  padding-top: 10px;
+  font-family: 'Ubuntu Mono', monospace;
+  font-size: 0.9em;
+}
+
+.content{
+  flex:1;
+  flex-basis: 82%;
+  display: flex;
+}
+
+.topbar {
+  width:82%;
+  height: 20px;
+  position: fixed;
+  top: 0;
+  background-color: white;
+  border: 1.3px solid black;
+  /* box-shadow: 4px 4px 6px grey; */
+  display: grid;
+  grid-template-columns: 6fr 1.2fr 1.2fr;
+  font-family: 'Ubuntu Mono', monospace;
+  font-size: 1.2em;
+  text-align: center;
+  z-index: 998;
+}
+
+
+
+.topbar > div:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+.imagebox{
+  position:relative;
+  flex: 1;
+  overflow: scroll;
+  width: 70%;
+  height: 900px;
+  left:0;
+}
+
+
+.text {
+  height: 900px;
+  overflow: scroll;
+  margin: 30px;
+  width: 30%;
+  font-family: 'Lora', serif;
+  font-size: 15px;
+}
+
+#material{
+  padding-bottom: 40px;
+}
+p1 {
+  float: left;
+}
+p2 {
+  float: right;
+}
+#discription {
+  padding-top: 40px;
+}
+
+.imagebox img{
+  width: 100%;
+  /* margin: 10px; */
+}
+
+
+@media only screen and (max-width: 600px) {
+  .imagebox{
+    height: 100vh;
+    width: 60%;
+  }
+  p1 {
+    width: 40%;
+    /* font-family: 'Open Sans', sans-serif; */
+    font-family: 'Lora', serif;
+    font-size: 25px;
+  }
+}

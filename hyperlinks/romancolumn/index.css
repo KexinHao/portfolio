@@ -7,11 +7,60 @@ body{
     /* font-family: helvetica, sans-serif;
     font-size: var(--font-size-m);
     line-height: var(--line-height); */
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
 
+a:link, a:visited, a:hover, a:active{
+  text-decoration: none;
+  color:black;
+}
+a:hover{
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+nav{
+  width: 10%;
+  index:999;
+  padding-left: 6px;
+  flex:1;
+  flex-basis: 18%;
+  overflow: none;
+}
+
+nav > ul.menu {
+  list-style-type: none;
+}
+
+li{
+  color:black;
+  font-family: 'Ubuntu Mono', monospace;
+  font-size: 0.9em;
+}
+li:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+nav .year{
+  padding-bottom: 7px;
+  padding-top: 10px;
+  font-family: 'Ubuntu Mono', monospace;
+  font-size: 0.9em;
+}
+
+.content{
+  flex:1;
+  flex-basis: 82%;
+  display: flex;
 }
 
 .topbar {
-  width:100%;
+  width:82%;
   height: 20px;
   position: fixed;
   top: 0;
@@ -23,76 +72,47 @@ body{
   font-family: 'Ubuntu Mono', monospace;
   font-size: 1.2em;
   text-align: center;
-  z-index: 9999;
+  z-index: 998;
 }
 
 
-
-.bottombar {
-  width:100%;
-  height: 20px;
-  position: fixed;
-  bottom: 0;
-  background-color: white;
-  border: 1.3px solid black;
-  display: grid;
-  grid-template-columns: 1.3fr 1.2fr;
-  font-family: 'Ubuntu Mono', monospace;
-  font-size: 1.2em;
-  text-align: center;
-  z-index: 9999;
-}
 
 .topbar > div:hover {
   background-color: black;
   color: white;
   cursor: pointer;
 }
-.bottombar > div:hover {
-  background-color: black;
-  color: white;
-  cursor: pointer;
-}
-
-
-/* .header{
-  position:fixed;
-  top: 30px;
-  z-index: 9998;
-  height: 150px;
-} */
-
-.content{
-  display: flex;
-}
 
 .imagebox{
   position:relative;
   flex: 1;
   overflow: scroll;
-  width: 60%;
+  width: 70%;
   height: 900px;
   left:0;
 }
 
-.text{
-  float: right;
-  overflow: scroll;
-  margin: 50px;
-  width: 40%;
+.text {
+  /* float: right; */
+  /* overflow: scroll; */
+  margin: 30px;
+  width: 30%;
   /* font-family: 'Open Sans', sans-serif; */
-  font-family: 'helvetica';
-  font-size: 13px;
+  font-family: 'Lora', serif;
+  font-size: 15px;
 }
 
-h1 {
-  text-align: left;
+#material{
+  padding-bottom: 40px;
 }
-h2 {
-  text-align: right;
+p1 {
+  float: left;
 }
-h3 {
-  text-align: left;
+p2 {
+  float: right;
+}
+#discription {
+  padding-top: 40px;
 }
 
 .imagebox img{
@@ -100,7 +120,16 @@ h3 {
   /* margin: 10px; */
 }
 
-.imagebox video{
-  /* margin: 10px; */
-  width: 100%;
+
+@media only screen and (max-width: 600px) {
+  .imagebox{
+    height: 100vh;
+    width: 60%;
+  }
+  p1 {
+    width: 40%;
+    /* font-family: 'Open Sans', sans-serif; */
+    font-family: 'Lora', serif;
+    font-size: 25px;
+  }
 }
