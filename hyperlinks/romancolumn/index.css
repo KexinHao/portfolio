@@ -90,17 +90,21 @@ nav .year{
   width: 70%;
   height: 900px;
   left:0;
+  overflow: -moz-scrollbars-none;
+  -ms-overflow-style: none;
 }
+.imagebox::-webkit-scrollbar { width: 0 !important }
 
 .text {
-  /* float: right; */
-  /* overflow: scroll; */
+  height: 900px;
+  overflow: scroll;
   margin: 30px;
   width: 30%;
-  /* font-family: 'Open Sans', sans-serif; */
   font-family: 'Lora', serif;
   font-size: 15px;
+  -ms-overflow-style: none;
 }
+.text::-webkit-scrollbar { width: 0 !important }
 
 #material{
   padding-bottom: 40px;

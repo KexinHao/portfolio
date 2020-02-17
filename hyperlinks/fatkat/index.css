@@ -90,7 +90,10 @@ nav .year{
   width: 70%;
   height: 900px;
   left:0;
+  overflow: -moz-scrollbars-none;
+  -ms-overflow-style: none;
 }
+.imagebox::-webkit-scrollbar { width: 0 !important }
 
 .text {
   height: 900px;
@@ -99,7 +102,9 @@ nav .year{
   width: 30%;
   font-family: 'Lora', serif;
   font-size: 15px;
+  -ms-overflow-style: none;
 }
+.text::-webkit-scrollbar { width: 0 !important }
 
 #material{
   padding-bottom: 40px;
