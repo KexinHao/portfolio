@@ -86,7 +86,6 @@ nav .year{
   -ms-overflow-style: none;
 }
 .text::-webkit-scrollbar {
-  padding-top: 40px;
   width: 0 !important
 }
 
