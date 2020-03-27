@@ -10,22 +10,94 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    background: rgb(219,168,255);
+    background: linear-gradient(90deg, rgba(219,168,255,1) 0%, rgba(223,255,178,1) 10%, rgba(254,254,254,1) 14%);
 }
 
-a:link, a:visited, a:hover, a:active{
+a:link, a:visited{
   text-decoration: none;
   color:black;
 }
-a:hover{
+a:hover, a:active{
+  color:white;
   background-color: black;
-  color: white;
-  cursor: pointer;
 }
+
+.bottombar {
+  width:100%;
+
+  height: 2vh;
+  position: fixed;
+  bottom: 2vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  color:black;
+  font-family: 'Rubik', sans-serif;
+  font-size: 2vh;
+  text-align: center;
+}
+.bottombar >a1 {
+  margin-bottom: 5vh;
+  box-shadow:inset 0px 11px 6px -3px #fadcf6;
+	background:linear-gradient(to bottom, #fabefa 5%, #7ee6e6 100%);
+	background-color:#fabefa;
+	border-radius:23px;
+	border:1px solid #f08484;
+	display:inline-block;
+	cursor:pointer;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 0px 0px #cc5cc5;
+}
+.bottombar>a1:hover {
+  background:linear-gradient(to bottom, #7ee6e6 5%, #fabefa 100%);
+  background-color:#7ee6e6;
+}
+.bottombar>a2 {
+  margin-bottom: 5vh;
+  box-shadow:inset 0px 11px 6px -3px #e8fadc;
+	background:linear-gradient(to bottom, #befae9 5%, #967ee6 100%);
+	background-color:#befae9;
+	border-radius:23px;
+	border:1px solid #f08484;
+	display:inline-block;
+	cursor:pointer;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 0px 0px #9ccc5e;
+}
+.bottombar>a2:hover {
+  background:linear-gradient(to bottom, #967ee6 5%, #befae9 100%);
+	background-color:#967ee6;
+}
+.bottombar>a3 {
+  margin-bottom: 5vh;
+  box-shadow:inset 0px 11px 6px -3px #a6ff00;
+	background:linear-gradient(to bottom, #befafa 5%, #0040ff 100%);
+	background-color:#befafa;
+	border-radius:23px;
+	border:1px solid #f08484;
+	display:inline-block;
+	cursor:pointer;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 0px 0px #00eeff;
+}
+.bottombar>a3:hover {
+  background:linear-gradient(to bottom, #0040ff 5%, #befafa 100%);
+	background-color:#0040ff;
+}
+
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
 
 nav{
   width: 10%;
   index:999;
-  padding-left: 6px;
+  padding-left: 1vh;
   flex:1;
   flex-basis: 18%;
   overflow: none;
@@ -37,20 +109,21 @@ nav > ul.menu {
 
 li{
   color:black;
-  font-family: 'Ubuntu Mono', monospace;
-  font-size: 0.9em;
+  font-family: 'Rubik', sans-serif;
+  font-size: 2vh;
 }
 li:hover {
+  font-style: italic;
   background-color: black;
   color: white;
   cursor: pointer;
 }
 
 nav .year{
-  padding-bottom: 7px;
-  padding-top: 10px;
-  font-family: 'Ubuntu Mono', monospace;
-  font-size: 0.9em;
+  padding-bottom: 1.5vh;
+  padding-top: 1vh;
+  font-family: 'Rubik', sans-serif;
+  font-size: 2.4vh;
 }
 
 .content{
@@ -61,7 +134,6 @@ nav .year{
 
 
 .imagebox{
-  position:relative;
   flex: 1;
   overflow: scroll;
   width: 70%;
@@ -74,19 +146,41 @@ nav .year{
 
 .imagebox img{
   width: 100%;
-  /* margin: 10px; */
 }
 .text {
   height: 100vh;
   overflow: scroll;
-  margin: 30px;
+  margin-right: 2vh;
+  margin-left:2vh;
   width: 30%;
-  font-family: 'Lora', serif;
-  font-size: 15px;
   -ms-overflow-style: none;
 }
 .text::-webkit-scrollbar {
   width: 0 !important
+}
+#tag{
+  display: flex;
+  align-items: flex-start;
+}
+p4{
+  margin-bottom:1vh;
+  margin-right: 1vh;
+  font-family: 'Rubik', sans-serif;
+  font-size: 1.5vh;
+  color:white;
+  border-radius: 1vh;
+  background: black;
+  padding: 0.5vh;
+}
+h3{
+  font-family: 'Permanent Marker', cursive;
+  margin-bottom: 1vh;
+  font-size: 6vh;
+}
+p3{
+  font-family: 'Rubik', sans-serif;
+  margin-top:5vh;
+  font-size: 2vh;
 }
 
 
