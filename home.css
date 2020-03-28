@@ -127,6 +127,9 @@ a:hover{
   }
   #left, #middle, #right{
     width: 100%;
+    float:none;
+    height:auto;
+    overflow:hidden;
   }
   .term{
     width:90vw;
@@ -145,6 +148,9 @@ a:hover{
   .term{
     background:linear-gradient(to bottom, #c27fe8 5%, #defabe 100%);
   	background-color:#c27fe8;
+  }
+  .icons img{
+    transform:scale(0.4, 0.4);
   }
   .bottombar {
     width:100vw;
