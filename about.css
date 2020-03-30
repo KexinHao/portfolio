@@ -20,7 +20,13 @@ a:hover{
   cursor: pointer;
 }
 
-
+p{
+  font-family: 'Rubik', sans-serif;
+  margin-left:1vw;
+  margin-top:3vw;
+  margin-bottom:3vw;
+  font-size: 3vh;
+}
 .term{
   width:80%;
   color:white;
@@ -39,7 +45,9 @@ a:hover{
   background:linear-gradient(to bottom, #c27fe8 5%, #defabe 100%);
 	background-color:#c27fe8;
 }
-
+#special{
+  font-style: italic;
+}
 
 .bottombar {
   width:100%;
@@ -193,12 +201,12 @@ a:hover{
     text-decoration:none;
   }
   #middle{
-    order:1;
-  }
-  #right{
     order:2;
   }
+  #right{
+    order:3;
+  }
   #left{
-    order:4;
+    order:1;
   }
 }
