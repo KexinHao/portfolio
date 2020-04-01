@@ -10,88 +10,85 @@
   <link href="https://fonts.googleapis.com/css?family=Work+Sans:200&display=swap" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <script>
-$(document).ready(function(){
-      $("#fatkatbutton").click(function(){
-          $("#fatkatimage").show();
-          $("#fatkattext").show();
-          window.location.hash = 'fatkat';
-       });
-      $("#missingbookbutton").click(function(){
-          $("#missingbookimage").show();
-          $("#missingbooktext").show();
-          window.location.hash = 'missingbook';
+$(function(){
+      $('.button').click(function(){
+        $('.imagebox').not('#image' + $(this).attr('target')).hide();
+        $('#image' + $(this).attr('target')).toggle();
+        $('.text').not('#text' + $(this).attr('target')).hide();
+        $('#text' + $(this).attr('target')).toggle();
       });
-      $("#taomapbutton").click(function(){
-        $("#taomapimage").show();
-        $("#taomaptext").show();
-        window.location.hash = 'taomap';
-      });
-      $("#butterflybutton").click(function(){
-        $("#butterflyimage").show();
-        $("#butterflytext").show();
-        window.location.hash = 'butterfly';
-      });
-      $("#unfoldingbutton").click(function(){
-        $("#unfoldingimage").show();
-        $("#unfoldingtext").show();
-        window.location.hash = 'unfolding';
-      });
-      $("#finaltablebutton").click(function(){
-        $("#finaltableimage").show();
-        $("#finaltabletext").show();
-        window.location.hash = 'finaltable';
-      });
-      $("#jumpropebutton").click(function(){
-        $("#jumpropeimage").show();
-        $("#jumpropetext").show();
-        window.location.hash = 'jumprope';
-      });
-      $("#amanclocmylbutton").click(function(){
-        $("#amanclocmylimage").show();
-        $("#amanclocmyltext").show();
-        window.location.hash = 'amanclocmyl';
-      });
-      $("#helooksbutton").click(function(){
-        $("#helooksimage").show();
-        $("#helookstext").show();
-        window.location.hash = 'helooks';
-      });
-      $("#duolanguagebutton").click(function(){
-        $("#duolanguageimage").show();
-        $("#duolanguagetext").show();
-        window.location.hash = 'duolanguage';
-      });
-      $("#lonelyheartsbutton").click(function(){
-        $("#lonelyheartsimage").show();
-        $("#lonelyheartstext").show();
-        window.location.hash = 'lonelyhearts';
-      });
-      $("#tiktokbutton").click(function(){
-        $("#tiktokimage").show();
-        $("#tiktoktext").show();
-        window.location.hash = 'lonelyhearts';
-      });
-      $("#romancolumnbutton").click(function(){
-        $("#romancolumnimage").show();
-        $("#romancolumntext").show();
-        window.location.hash = 'romancolumn';
-      });
-      $("#royalnailsalonbutton").click(function(){
-        $("#royalnailsalonimage").show();
-        $("#royalnailsalontext").show();
-        window.location.hash = 'royalnailsalon';
-      });
-      $("#trancebutton").click(function(){
-        $("#tranceimage").show();
-        $("#trancetext").show();
-        window.location.hash = 'trance';
-      });
-      $("#WFFFbutton").click(function(){
-        $("#WFFFimage").show();
-        $("#WFFFtext").show();
-        window.location.hash = 'WFFF';
-      });
+      // $("#taomapbutton").click(function(){
+      //   $("#taomapimage").show();
+      //   $("#taomaptext").show();
+      //   window.location.hash = 'taomap';
+      // });
+      // $("#butterflybutton").click(function(){
+      //   $("#butterflyimage").show();
+      //   $("#butterflytext").show();
+      //   window.location.hash = 'butterfly';
+      // });
+      // $("#unfoldingbutton").click(function(){
+      //   $("#unfoldingimage").show();
+      //   $("#unfoldingtext").show();
+      //   window.location.hash = 'unfolding';
+      // });
+      // $("#finaltablebutton").click(function(){
+      //   $("#finaltableimage").show();
+      //   $("#finaltabletext").show();
+      //   window.location.hash = 'finaltable';
+      // });
+      // $("#jumpropebutton").click(function(){
+      //   $("#jumpropeimage").show();
+      //   $("#jumpropetext").show();
+      //   window.location.hash = 'jumprope';
+      // });
+      // $("#amanclocmylbutton").click(function(){
+      //   $("#amanclocmylimage").show();
+      //   $("#amanclocmyltext").show();
+      //   window.location.hash = 'amanclocmyl';
+      // });
+      // $("#helooksbutton").click(function(){
+      //   $("#helooksimage").show();
+      //   $("#helookstext").show();
+      //   window.location.hash = 'helooks';
+      // });
+      // $("#duolanguagebutton").click(function(){
+      //   $("#duolanguageimage").show();
+      //   $("#duolanguagetext").show();
+      //   window.location.hash = 'duolanguage';
+      // });
+      // $("#lonelyheartsbutton").click(function(){
+      //   $("#lonelyheartsimage").show();
+      //   $("#lonelyheartstext").show();
+      //   window.location.hash = 'lonelyhearts';
+      // });
+      // $("#tiktokbutton").click(function(){
+      //   $("#tiktokimage").show();
+      //   $("#tiktoktext").show();
+      //   window.location.hash = 'lonelyhearts';
+      // });
+      // $("#romancolumnbutton").click(function(){
+      //   $("#romancolumnimage").show();
+      //   $("#romancolumntext").show();
+      //   window.location.hash = 'romancolumn';
+      // });
+      // $("#royalnailsalonbutton").click(function(){
+      //   $("#royalnailsalonimage").show();
+      //   $("#royalnailsalontext").show();
+      //   window.location.hash = 'royalnailsalon';
+      // });
+      // $("#trancebutton").click(function(){
+      //   $("#tranceimage").show();
+      //   $("#trancetext").show();
+      //   window.location.hash = 'trance';
+      // });
+      // $("#WFFFbutton").click(function(){
+      //   $("#WFFFimage").show();
+      //   $("#WFFFtext").show();
+      //   window.location.hash = 'WFFF';
+      // });
    });
   </script>
 </head>
@@ -105,32 +102,32 @@ $(document).ready(function(){
     <ul class="menu">
       <h1 class="year">2018</h1>
         <a href="https://youtu.be/n9AAqViqFDM" target="_blank"><li> Yes Sir I Can Boogie</li></a>
-        <li id="fatkatbutton">FatKat</li>
-        <li id="missingbookbutton">The Missing Book</li>
+        <li target="fatkat">FatKat</li>
+        <li  target="missingbook">The Missing Book</li>
         <a href="https://youtu.be/3vSbYauKtpY" target="_blank"><li> Disposable</li></a>
-        <li id="taomapbutton"> Taoist Corporeal Map</li>
-        <li id="butterflybutton"> Am I the Butterfly</li>
+        <li target="taomap"> Taoist Corporeal Map</li>
+        <li target="butterfly"> Am I the Butterfly</li>
         <a href="https://youtu.be/_yxI8Ot2v-o"target="_blank"><li> Maliefeld </li></a>
-        <li id="unfoldingbutton"> Truth Unfolds Here</li>
+        <li target="unfolding"> Truth Unfolds Here</li>
       <h2 class="year">2019</h2>
-        <li id="finaltablebutton"> Your Final Table</li>
+        <li target="finaltable"> Your Final Table</li>
         <a href="https://youtu.be/xjU1zem5NCc"target="_blank"><li> Documentary of School Renovation</li></a>
-        <li id="jumpropebutton"> Jump Rope to Write Letters</li>
+        <li target="jumprope"> Jump Rope to Write Letters</li>
         <a href="https://youtu.be/zsf0zArxvs0" target="_blank"><li id="futuredance"> Future Dance of Nostalgia</li></a>
-        <li id="amanclocmylbutton"> Amanclocmyl</li>
+        <li target="amanclocmyl"> Amanclocmyl</li>
         <a href="higoogle/index.html" target="_blank"><li> Hi Google</li></a>
-        <li id="helooksbutton"> He Looks</li>
-        <li id="duolanguagebutton"> language overlaps</li>
+        <li target="helooks"> He Looks</li>
+        <li target="duolanguage"> language overlaps</li>
         <a href="chimeralab/index.html"target="_blank"><li> Chimeralab</li></a>
-        <li id="lonelyheartsbutton"> Lonely Hearts Portal</li>
+        <li target="lonelyhearts"> Lonely Hearts Portal</li>
         <a href="https://youtu.be/pWLfT7qUhyY" target="_blank"><li> Dad Anwsers</li></a>
-        <li id="tiktokbutton">TikTok Alone Together</li>
-        <li id="romancolumnbutton">Chinese Roman Columns</li>
+        <li target="tiktok">TikTok Alone Together</li>
+        <li target="romancolumn">Chinese Roman Columns</li>
        <h2 class="year">on-going</h2>
-        <li id="royalnailsalonbutton"> Royal Nail Salon</li>
+        <li target="royalnailsalon"> Royal Nail Salon</li>
         <a href="https://www.instagram.com/portrayed_landscape/"target="_blank"><li> Portrayed Landscape</li></a>
-        <li id="trancebutton"> Trance Magazine</li>
-        <li id="WFFFbutton"> WFFF - World Fusion Food</li>
+        <li target="trance"> Trance Magazine</li>
+        <li target="WFFF"> WFFF - World Fusion Food</li>
     </ul>
   </nav>
 
@@ -143,34 +140,34 @@ $(document).ready(function(){
       </div> -->
 
       <div class="imagebox">
-        <div id="fatkatimage" style="display:none">
+        <div id="imagefatkat" style="display:none">
           <img src="image/fatkatimage/p5.png"/>
           <img src="image/fatkatimage/p4.png"/>
           <img src="image/fatkatimage/p1.png" />
           <img src="image/fatkatimage/p2.png"/>
           <img src="image/fatkatimage/p3.png"/ style="margin-bottom:10vh;">
         </div>
-        <div id="missingbookimage" style="display:none">
+        <div id="imagemissingbook" style="display:none">
           <img src="image/missingbookimage/overview.JPG"/>
           <img src="image/missingbookimage/display.JPG"/>
           <img src="image/missingbookimage/spread1.JPG"/>
           <img src="image/missingbookimage/spread2.JPG"/>
           <img src="image/missingbookimage/spread3.JPG"/style="margin-bottom:10vh;">
         </div>
-        <div id="taomapimage" style="display:none">
+        <div id="imagetaomap" style="display:none">
           <img src="image/taomapimage/IMG_9539.JPG"/>
           <video width=100%  controls><source src="image/taomapimage/IMG_9548.MOV" type="video/mp4">Your browser does not support the video tag.</video>
           <img src="image/taomapimage/IMG_9530.JPG"/>
           <img src="image/taomapimage/IMG_9543.JPG"/>
           <img src="image/taomapimage/IMG_9535.JPG"/style="margin-bottom:10vh;">
         </div>
-         <div id="butterflyimage" style="display:none">
+         <div id="imagebutterfly" style="display:none">
           <img src="image/butterflyimage/butterfly1.JPG"/>
           <iframe width=100% height="400" src="https://www.youtube.com/embed/-wLtBftA9mE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           <img src="image/butterflyimage/butterfly4.JPG"/>
           <img src="image/butterflyimage/butterfly5.JPG"/style="margin-bottom:10vh;">
         </div>
-        <div id="unfoldingimage" style="display:none">
+        <div id="imageunfolding" style="display:none">
           <img src="image/unfoldingimage/7.jpg" />
           <img src="image/unfoldingimage/unfolding1.jpg"/>
           <iframe width=100%; height="400" src="https://www.youtube.com/embed/IRQuZyOYsms" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -180,14 +177,14 @@ $(document).ready(function(){
           <img src="image/unfoldingimage/dscf5167.jpg"/>
           <img src="image/unfoldingimage/dscf5190.jpg"/style="margin-bottom:10vh;">
         </div>
-        <div id="finaltableimage" style="display:none">
+        <div id="imagefinaltable" style="display:none">
           <img src="image/finaltableimage/1.jpg"/>
           <iframe width=100% height=400 src="https://www.youtube.com/embed/tq5vvcpFXAI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           <img src="image/finaltableimage/2.jpg"/>
           <img src="image/finaltableimage/3.jpg"/>
           <img src="image/finaltableimage/4.jpg"/style="margin-bottom:10vh;">
         </div>
-        <div id="jumpropeimage" style="display:none">
+        <div id="imagejumprope" style="display:none">
           <img src="image/jumpropeimage/m.png"/>
           <img src="image/jumpropeimage/a-lighten.jpg"/>
           <iframe width=100%; height="1040" src="image/jumpropeimage/v.mp4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -198,7 +195,7 @@ $(document).ready(function(){
           <img src="image/jumpropeimage/4.png"/>
           <img src="image/jumpropeimage/detail.jpg"/style="margin-bottom:10vh;">
         </div>
-        <div id="amanclocmylimage" style="display:none">
+        <div id="imageamanclocmyl" style="display:none">
           <img src="image/amanclocmylimage/amanclocmyl1.png"/>
           <img src="image/amanclocmylimage/4.jpg"/>
           <img src="image/amanclocmylimage/5.jpg"/>
@@ -207,7 +204,7 @@ $(document).ready(function(){
           <img src="image/amanclocmylimage/1.jpg"/>
           <img src="image/amanclocmylimage/2.jpg"/style="margin-bottom:10vh;">
         </div>
-        <div id="helooksimage" style="display:none">
+        <div id="imagehelooks" style="display:none">
           <img src="image/helooksimage/cover.jpg"/>
           <img src="image/helooksimage/Scan-1-copy.jpg"/>
           <img src="image/helooksimage/Scan-34.jpg"/>
@@ -216,26 +213,26 @@ $(document).ready(function(){
           <img src="image/helooksimage/Scan-40.jpg" />
           <img src="image/helooksimage/Scan-copy.jpg"/style="margin-bottom:10vh;">
         </div>
-        <div id="duolanguageimage" style="display:none">
+        <div id="imageduolanguage" style="display:none">
           <video width=100%  controls><source src="image/duolanguageimage/blinking.mp4" type="video/mp4">Your browser does not support the video tag.</video>
           <img src="image/duolanguageimage/packagecollage.jpg"/style="margin-bottom:10vh;">
         </div>
-        <div id="lonelyheartsimage" style="display:none">
+        <div id="imagelonelyhearts" style="display:none">
           <iframe width=100% height="1040" src="https://www.youtube.com/embed/u_EXk8Tf3sQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
-        <div id="tiktokimage" style="display:none">
+        <div id="imagetiktok" style="display:none">
           <img src="image/tiktokimage/tiktok1.jpg"/>
           <iframe width=100% height="1040" src="https://www.youtube.com/embed/AbSM7xLedhg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           <img src="image/tiktokimage/tiktok2.jpg"/>
           <img src="image/tiktokimage/tiktok3.jpg"/>
           <img src="image/tiktokimage/tiktok4.jpg"/style="margin-bottom:10vh;">
         </div>
-        <div id="romancolumnimage" style="display:none">
+        <div id="imageromancolumn" style="display:none">
           <img src="image/romancolumnimage/romancolumn.JPG"/>
           <iframe width=100% height="1040" src="https://www.youtube.com/embed/AhcDOeHVonc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           <img src="image/romancolumnimage/exhibition.JPG"/style="margin-bottom:10vh;">
         </div>
-        <div id="royalnailsalonimage" style="display:none">
+        <div id="imageroyalnailsalon" style="display:none">
           <a href="https://www.facebook.com/events/2027895017338400"><img src="image/royalnailsalonimage/Scan-1.jpg"/></a>
           <a href="https://youtu.be/0OyGHA6fMbs" target="_blank"><img src="image/royalnailsalonimage/shanghai.jpg"/></a>
           <img src="image/royalnailsalonimage/poster-for-combo.jpg"/>
@@ -244,7 +241,7 @@ $(document).ready(function(){
           <a href="https://www.facebook.com/events/214517893069089"><img src="image/royalnailsalonimage/IMG_1665.JPG"/></a>
           <a href="https://www.facebook.com/events/897235837343904"><img src="image/royalnailsalonimage/tn.jpg"/style="margin-bottom:10vh;"></a>
         </div>
-        <div id="tranceimage" style="display:none">
+        <div id="imagetrance" style="display:none">
           <img src="image/tranceimage/Scan.jpg"/>
           <img src="image/tranceimage/Scan-3.jpg"/>
           <img src="image/tranceimage/Scan-6.jpg"/>
@@ -253,7 +250,7 @@ $(document).ready(function(){
           <img src="image/tranceimage/banner3.png"/>
           <img src="image/tranceimage/escape-open-call-2-1-04.jpg"/style="margin-bottom:10vh;">
         </div>
-        <div id="WFFFimage" style="display:none">
+        <div id="imageWFFF" style="display:none">
           <iframe width=100% height="400" src="https://www.youtube.com/embed/eRpO173GBVI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           <iframe width=100% height="400" src="https://www.youtube.com/embed/bz8QwxSUz2Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           <img src="image/WFFFimage/IMG_1601.jpg"/>
@@ -265,7 +262,7 @@ $(document).ready(function(){
       </div>
 
       <div class="text">
-        <div id="fatkattext" style="display:none">
+        <div id="textfatkat" style="display:none">
               <h3>FatKat</h3>
               <div id="tag">
                 <p4>photography</p4><p4>publication</p4>
@@ -286,7 +283,7 @@ $(document).ready(function(){
                <br /><br /><br /><br />
               </p3>
         </div>
-        <div id="missingbooktext" style="display:none">
+        <div id="textmissingbook" style="display:none">
               <h3>The Missing Book</h3>
               <div id="tag">
                 <p4>book-making</p4><p4>publication</p4><p4>furniture</p4><p4>installation</p4>
@@ -308,7 +305,7 @@ $(document).ready(function(){
                 <br /><br /><br /><br />
               </p3>
         </div>
-        <div id="taomaptext" style="display:none">
+        <div id="texttaomap" style="display:none">
                 <h3>Taoist Corporeal Map</h3>
                 <div id="tag">
                   <p4>illustration</p4><p4>audio-visual</p4><p4>fabric</p4>
@@ -322,7 +319,7 @@ $(document).ready(function(){
                   <br /><br /><br /><br />
                 </p3>
         </div>
-        <div id="butterflytext" style="display:none">
+        <div id="textbutterfly" style="display:none">
                 <h3>Am I the Butterfly</h3>
                 <div id="tag">
                   <p4>space-design</p4><p4>interactive-media</p4><p4>audio-visual</p4><p4>karaoke</p4>
@@ -341,7 +338,7 @@ $(document).ready(function(){
                   <br /><br /><br /><br />
                 </p3>
         </div>
-        <div id="unfoldingtext" style="display:none">
+        <div id="textunfolding" style="display:none">
                   <h3>Truth Unfolds Here</h3>
                   <div id="tag">
                     <p4>public-intervention</p4><p4>screen-printing</p4><p4>poster</p4><p4>publication</p4>
@@ -353,7 +350,7 @@ $(document).ready(function(){
                      big supermarket and on the tram, to perform this act.
                   </p3>
         </div>
-        <div id="finaltabletext" style="display:none">
+        <div id="textfinaltable" style="display:none">
                 <h3>Your Final Table</h3>
                 <div id="tag">
                   <p4>installation</p4><p4>performance</p4>
@@ -374,7 +371,7 @@ $(document).ready(function(){
                   to mourn the loss of physical realness of dinning.<br />
                 </p3>
         </div>
-        <div id="jumpropetext" style="display:none">
+        <div id="textjumprope" style="display:none">
                 <h3>Jump Rope to Write Letters</h3>
                 <div id="tag">
                   <p4>body</p4><p4>performance</p4><p4>letters</p4><p4>architecture</p4>
@@ -392,7 +389,7 @@ $(document).ready(function(){
                   <br /><br /><br /><br />
                 </p3>
         </div>
-        <div id="amanclocmyltext" style="display:none">
+        <div id="textamanclocmyl" style="display:none">
                 <h3>Amanclocmyl</h3>
                 <div id="tag">
                   <p4>screen-printing</p4><p4>riso-printing</p4><p4>poster</p4><p4>publication</p4>
@@ -406,7 +403,7 @@ $(document).ready(function(){
                   <br /><br />My design task is to make publication, leaflet and poster.
                 </p3>
         </div>
-        <div id="helookstext" style="display:none">
+        <div id="texthelooks" style="display:none">
                 <h3>He Looks</h3>
                 <div id="tag">
                   <p4>book-making</p4><p4>self-publishing</p4>
@@ -422,7 +419,7 @@ $(document).ready(function(){
                   <br /><br /><br /><br />
                 </p3>
         </div>
-        <div id="duolanguagetext" style="display:none">
+        <div id="textduolanguage" style="display:none">
                 <h3>Language Overlaps</h3>
                 <div id="tag">
                   <p4>typography</p4><p4>poster</p4>
@@ -431,7 +428,7 @@ $(document).ready(function(){
                   A look into the presence of multiple language families in a common place - food packages in China town, and a typographical playground for the duo writing systems in some harmonic conflicts.
                 </p3>
         </div>
-        <div id="lonelyheartstext" style="display:none">
+        <div id="textlonelyhearts" style="display:none">
                 <h3>Lonely Hearts Portal</h3>
                 <div id="tag">
                   <p4>web-design</p4><p4>crazytalk</p4><p4>data</p4>
@@ -443,7 +440,7 @@ $(document).ready(function(){
                  <br /><br /><br /><br />“Be here, I tell you everything I have said....”
                 </p3>
         </div>
-        <div id="tiktoktext" style="display:none">
+        <div id="texttiktok" style="display:none">
                 <h3>TikTok Alone Together</h3>
                 <div id="tag">
                   <p4>social-mining</p4>
@@ -456,7 +453,7 @@ $(document).ready(function(){
                   <br /><br />By conjoining single clips of dance, I try to make the “collective dance” possible again, in a virtual and expansive space.
                 </p3>
         </div>
-        <div id="romancolumntext" style="display:none">
+        <div id="textromancolumn" style="display:none">
               <h3>124 + 625 Roman Columns</h3>
               <div id="tag">
                 <p4>social-mining</p4><p4>interactive-media</p4><p4>documentary</p4><p4>archive</p4>
@@ -477,7 +474,7 @@ $(document).ready(function(){
                   <br /><br /><br /><br />
               </p3>
         </div>
-        <div id="royalnailsalontext" style="display:none">
+        <div id="textroyalnailsalon" style="display:none">
                 <h3>Royal Nail Salon</h3>
                 <div id="tag">
                   <p4>event</p4><p4>beauty</p4><p4>salon</p4><p4>service</p4><p4>public</p4>
@@ -503,12 +500,12 @@ $(document).ready(function(){
                   <br /><br /><br /><br />
                  </p3>
         </div>
-        <div id="trancetext" style="display:none">
+        <div id="texttrance" style="display:none">
                   <p3>
                     trannnnce
                   </p3>
                 </div>
-         <div id="WFFFtext" style="display:none">
+         <div id="textWFFF" style="display:none">
                   <p3>
                     wfffff
                   </p3>
