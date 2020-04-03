@@ -158,7 +158,7 @@ a:hover{
     bottom: 0;
     display: grid;
     grid-template-columns:  0.3fr;
-    grid-template-rows:  1fr 1fr;
+    grid-template-rows:  1fr 1fr 1fr;
   }
   .bottombar>a {
     margin-bottom: 0;

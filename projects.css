@@ -28,7 +28,7 @@ a:hover, a:active{
   position: fixed;
   bottom: 2vh;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 0.5fr;
 }
 .bottombar>a {
   margin-bottom: -2vh;
@@ -48,7 +48,25 @@ a:hover, a:active{
   background:linear-gradient(to bottom, #7ee6e6 5%, #fabefa 100%);
   background-color:#7ee6e6;
 }
-
+.navigation>a {
+  margin-top:10vh;
+  width:40%;
+  color:white;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 4vh;
+  text-align: center;
+  box-shadow:inset 0px 0px 2vh 0.3vh #607596;
+	background:linear-gradient(to bottom, #ffdede 8%, #5344ff 80%);
+	background-color:#faf4be;
+	border-radius:50vh;
+	display:inline-block;
+	padding:1.2vh 1.2vh;
+	text-decoration:none;
+}
+.navigation>a:hover {
+  background:linear-gradient(to bottom, #7ee6e6 5%, #fabefa 100%);
+  background-color:#7ee6e6;
+}
 
 
 nav{
