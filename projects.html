@@ -9,16 +9,37 @@
   <link href="https://fonts.googleapis.com/css?family=Permanent+Marker|Rubik:400,500i,700i&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Work+Sans:200&display=swap" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 <script>
+
 $(function(){
-      $('.title').click(function(){
-        $('.imagebox').not('#image' + $(this).attr('target')).hide();
-        $('#image' + $(this).attr('target')).toggle();
-        $('.text').not('#text' + $(this).attr('target')).hide();
-        $('#text' + $(this).attr('target')).toggle();
-        window.location.hash = target;
+  $('.topbar').click(function(){
+      $('#navbar').toggle();
+        // window.location.hash = target;
       });
+// $(function(){
+   $('.title').click(function(){
+       $('#image' + $(this).attr('id')).show();
+       $('.imagebox > div').not('#image' + $(this).attr('id')).hide();
+       $('#text' + $(this).attr('id')).show();
+       $('.text > div').not('#text' + $(this).attr('id')).hide();
+       window.location.hash = $(this).attr('id');
+
+
+        // $('.imagebox').not('#image' + $(this).attr('target')).hide();
+        // $('#image' + $(this).attr('target')).toggle();
+        // $('.text').not('#text' + $(this).attr('target')).hide();
+        // $('#text' + $(this).attr('target')).toggle();
+        // window.location.hash = target;
+      });
+
+      if(window.location.hash) {
+        var hash = window.location.hash.substring(1);
+        // alert (hash);
+        $("#image" + hash).show();
+        $('.imagebox > div').not("#image" + hash).hide();
+        $("#text" + hash).show();
+        $('.text > div').not("#text" + hash).hide();
+      };
       // $("#taomapbutton").click(function(){
       //   $("#taomapimage").show();
       //   $("#taomaptext").show();
@@ -89,49 +110,53 @@ $(function(){
       //   $("#WFFFtext").show();
       //   window.location.hash = 'WFFF';
       // });
-   });
+   })
   </script>
 </head>
 <body>
+
   <div class="bottombar">
     <a href="project.html">how</a1>
     <a href="about.html">'bout....</a2>
     <a href="home.html">home</a>
   </div>
+  <div class="topbar">
+    list
+  </div>
 
 
-  <nav>
+  <nav id="navbar">
     <ul class="menu">
         <h1 class="year">2018</h1>
         <a href="https://youtu.be/n9AAqViqFDM" target="_blank"><li> Yes Sir I Can Boogie</li></a>
-        <li class="title" target="fatkat">FatKat</li>
-        <li class="title" target="missingbook">The Missing Book</li>
+        <li class="title" id="fatkat">FatKat</li>
+        <li class="title" id="missingbook">The Missing Book</li>
         <a href="https://youtu.be/3vSbYauKtpY" target="_blank"><li> Disposable</li></a>
-        <li class="title" target="taomap"> Taoist Corporeal Map</li>
-        <li class="title" target="butterfly"> Am I the Butterfly</li>
+        <li class="title" id="taomap"> Taoist Corporeal Map</li>
+        <li class="title" id="butterfly"> Am I the Butterfly</li>
         <a href="https://youtu.be/_yxI8Ot2v-o"target="_blank"><li> Maliefeld </li></a>
-        <li class="title" target="unfolding"> Truth Unfolds Here</li>
+        <li class="title" id="unfolding"> Truth Unfolds Here</li>
 
         <h2 class="year">2019</h2>
-        <li class="title" target="finaltable"> Your Final Table</li>
+        <li class="title" id="finaltable"> Your Final Table</li>
         <a href="https://youtu.be/xjU1zem5NCc"target="_blank"><li> Documentary of School Renovation</li></a>
-        <li class="title" target="jumprope"> Jump Rope to Write Letters</li>
+        <li class="title" id="jumprope"> Jump Rope to Write Letters</li>
         <a href="https://youtu.be/zsf0zArxvs0" target="_blank"><li id="futuredance"> Future Dance of Nostalgia</li></a>
-        <li class="title" target="amanclocmyl"> Amanclocmyl</li>
+        <li class="title" id="amanclocmyl"> Amanclocmyl</li>
         <a href="higoogle/index.html" target="_blank"><li> Hi Google</li></a>
-        <li class="title" target="helooks"> He Looks</li>
-        <li class="title" target="duolanguage"> language overlaps</li>
+        <li class="title" id="helooks"> He Looks</li>
+        <li class="title" id="duolanguage"> language overlaps</li>
         <a href="chimeralab/index.html"target="_blank"><li> Chimeralab</li></a>
-        <li class="title" target="lonelyhearts"> Lonely Hearts Portal</li>
+        <li class="title" id="lonelyhearts"> Lonely Hearts Portal</li>
         <a href="https://youtu.be/pWLfT7qUhyY" target="_blank"><li> Dad Anwsers</li></a>
-        <li class="title" target="tiktok">TikTok Alone Together</li>
-        <li class="title" target="romancolumn">Chinese Roman Columns</li>
+        <li class="title" id="tiktok">TikTok Alone Together</li>
+        <li class="title" id="romancolumn">Chinese Roman Columns</li>
 
         <h2 class="year">on-going</h2>
-        <li class="title" target="royalnailsalon"> Royal Nail Salon</li>
+        <li class="title" id="royalnailsalon"> Royal Nail Salon</li>
         <a href="https://www.instagram.com/portrayed_landscape/"target="_blank"><li> Portrayed Landscape</li></a>
-        <li class="title" target="trance"> Trance Magazine</li>
-        <li class="title" target="WFFF"> WFFF - World Fusion Food</li>
+        <li class="title" id="trance"> Trance Magazine</li>
+        <li class="title" id="WFFF"> WFFF - World Fusion Food</li>
     </ul>
   </nav>
 
@@ -144,7 +169,7 @@ $(function(){
       </div> -->
 
       <div class="imagebox">
-        <div id="imagefatkat" >
+        <div id="imagefatkat" style="display:none">
           <img src="image/fatkatimage/p5.png"/>
           <img src="image/fatkatimage/p4.png"/>
           <img src="image/fatkatimage/p1.png" />
@@ -266,7 +291,7 @@ $(function(){
       </div>
 
       <div class="text">
-        <div id="textfatkat" >
+        <div id="textfatkat"style="display:none" >
               <h3>FatKat</h3>
               <div id="tag">
                 <p4>photography</p4><p4>publication</p4>

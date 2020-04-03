@@ -22,7 +22,27 @@ a:hover, a:active{
   color:white;
   background-color: black;
 }
-
+.topbar{
+  display: none;
+  position: fixed;
+  top:0;
+  left:0;
+  margin-bottom: -2vh;
+  color:white;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 4vh;
+  text-align: center;
+  box-shadow:inset 0px 0px 2vh 0.3vh #607596;
+  background:linear-gradient(to bottom, #ffdede 8%, #5344ff 80%);
+  background-color:#faf4be;
+  border-radius:50vh;
+  padding:1.2vh 1.2vh;
+  text-decoration:none;
+}
+.topbar:hover {
+  background:linear-gradient(to bottom, #7ee6e6 5%, #fabefa 100%);
+  background-color:#7ee6e6;
+}
 .bottombar {
   width:100%;
   position: fixed;
@@ -170,7 +190,15 @@ p3{
     margin-bottom:30vh;
   }
   nav{
-    display:none;
+    z-index:998;
+    display: none;
+    position:fixed;
+    padding-top:5vh;
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 60%, rgba(254,254,254,0) 100%);
+    left:0;
+    width:40%;
+    height:100vh;
   }
   .text {
     height: 100vh;
@@ -235,4 +263,9 @@ p3{
     background:linear-gradient(to bottom, #7ee6e6 5%, #fabefa 100%);
     background-color:#7ee6e6;
   }
+  .topbar{
+    display:inline-block;
+    z-index:999;
+  }
+
 }
