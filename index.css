@@ -69,7 +69,7 @@ a:hover{
 
 
 ::-webkit-scrollbar {
-    width: 10vh;
+    width: 6vw;
 }
 
 ::-webkit-scrollbar-track {
@@ -116,7 +116,7 @@ a:hover{
 }
 
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 660px) {
   .grid{
     display: flex; flex-direction: column;
     width:100vw;
@@ -126,7 +126,7 @@ a:hover{
     width:100%;
   }
   #left, #middle, #right{
-    width: 100%;
+    width: 100vw;
     float:none;
     height:auto;
     overflow:hidden;
@@ -179,18 +179,7 @@ a:hover{
     background-color:#7ee6e6;
   }
   ::-webkit-scrollbar {
-      width: 0vw;
-  }
-
-  ::-webkit-scrollbar-thumb {
-    margin-bottom: 5vh;
-    box-shadow:inset 0px 0px 2vh 0.3vh #d5e5ff;
-    background:linear-gradient(to right, #ccff4e 2%, #7e96e8 70%);
-    background-color:#c4fff3;
-    border-radius:50vh;
-    display:inline-block;
-    padding:1.2vh 1.2vh;
-    text-decoration:none;
+      display:none;
   }
   #middle{
     order:1;
