@@ -112,7 +112,7 @@ a:hover{
   overflow: scroll;
 }
 .grid img{
-  max-width: 400px;
+  width: 100%;
 }
 
 
