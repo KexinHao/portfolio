@@ -95,7 +95,7 @@ nav{
   padding-left: 1vh;
   flex:1;
   flex-basis: 18%;
-  overflow: none;
+  overflow: scroll;
 }
 
 nav > ul.menu {
