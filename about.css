@@ -44,7 +44,8 @@ p{
 	background-color:#c27fe8;
 }
 #special{
-  font-style: italic;
+  font-family: 'Fraunces', serif;
+  font-size: 1.45rem;
 }
 
 .bottombar {
@@ -52,7 +53,7 @@ p{
   position: fixed;
   bottom: 2vh;
   display: grid;
-  grid-template-columns: 1fr 1fr 0.5fr;
+  grid-template-columns: 1fr 1fr;
 }
 .bottombar>a {
   margin-bottom: -2vh;
@@ -92,45 +93,46 @@ p{
   text-decoration:none;
 } */
 
-.threecolumns{
+.columns{
   display: flex;
   flex-direction: row;
 }
 
 #left{
-  width: 30%;
+  width: 50%;
   height: 100vh;
   overflow: scroll;
 }
-#middle{
-  width: 40%;
-  height: 100vh;
-  overflow: scroll;
-}
-#middle p:last-of-type{
+#left p:last-of-type{
   margin-bottom:9rem;
 }
 #right{
-  width: 30%;
+  width: 50%;
   height: 100vh;
   overflow: scroll;
+}
+#right p:last-of-type{
+  margin-bottom:9rem;
 }
 
 
 @media only screen and (max-width: 800px) {
-  .threecolumns{
+  .columns{
     display: flex;
     flex-direction: column;
     width:100%;
   }
-  #left, #middle, #right{
+  #left, #right{
     width: 100%;
     float:none;
     height:auto;
     /* overflow:hidden; */
   }
-  #middle p:last-of-type{
+  #left p:last-of-type{
     margin-bottom:0rem;
+  }
+  #right p:last-of-type{
+    margin-bottom:10rem;
   }
   .bottombar {
     width:100vw;
@@ -144,7 +146,7 @@ p{
     margin-bottom: 0;
     color:white;
     font-family: 'Work Sans', sans-serif;
-    font-size: 1rem;
+    /* font-size: 1rem; */
     text-align: center;
     box-shadow:inset 0px 0px 2vh 0.3vh #607596;
     background:linear-gradient(to bottom, #ffdede 8%, #5344ff 80%);

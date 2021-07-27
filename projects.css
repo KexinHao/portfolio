@@ -48,7 +48,7 @@ a:hover, a:active{
   position: fixed;
   bottom: 2vh;
   display: grid;
-  grid-template-columns: 1fr 1fr 0.5fr;
+  grid-template-columns: 1fr 1fr;
 }
 .bottombar>a {
   margin-bottom: -2vh;
