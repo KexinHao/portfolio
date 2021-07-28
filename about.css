@@ -10,6 +10,10 @@ body{
 
 }
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@1,200;1,300&display=swap');
+@font-face {
+  font-family: "Fraunces", serif;
+  src: url(font/Fraunces_9pt_SuperSoft-ThinItalic.woff);
+}
 
 a:link, a:visited, a:hover, a:active{
   text-decoration: none;
