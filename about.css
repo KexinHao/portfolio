@@ -9,6 +9,7 @@ body{
     line-height: var(--line-height); */
 
 }
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@1,200;1,300&display=swap');
 
 a:link, a:visited, a:hover, a:active{
   text-decoration: none;
