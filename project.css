@@ -17,6 +17,9 @@ a:hover, a:active{
   color:white;
   background-color: black;
 }
+hr.divider-solid{
+  border-top: 1.5px solid black;
+}
 
 .bottombar {
   width:100%;
