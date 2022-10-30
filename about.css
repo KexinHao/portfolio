@@ -11,10 +11,18 @@ body{
 }
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@1,200;1,300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 @font-face {
-  font-family: 'Fraunces', serif;
-  src: url(font/Fraunces_9pt_SuperSoft-ThinItalic.woff);
+  font-family: "Fraunces";
+  src: url("font/Fraunces_9pt_SuperSoft-ThinItalic.woff") format('woff');
 }
+
+@font-face {
+  font-family: "CMU classic serif";
+  src: url("font/cmunci.woff") format('woff');
+}
+
+
 hr.divider-solid{
   border-top: 1.5px solid black;
 }
@@ -36,7 +44,8 @@ p{
 .term{
   width:90%;
   color:white;
-  font-family: 'Work Sans', sans-serif;
+  font-family: 'CMU classic serif';
+  text-shadow: 0.5px 0.5px 0.5px grey;
   font-size: 1.5rem;
   text-align: center;
   box-shadow:inset 0px 0px 2vh 0.3vh #d5e5ff;
@@ -72,7 +81,8 @@ small{
 .bottombar>a {
   margin-bottom: -2vh;
   color:white;
-  font-family: 'Work Sans', sans-serif;
+  font-family: 'CMU classic serif';
+  text-shadow: 0.5px 0.5px 0.5px grey;
   font-size: 1.5rem;
   text-align: center;
   box-shadow:inset 0px 0px 2vh 0.3vh #607596;
@@ -159,7 +169,6 @@ small{
   .bottombar>a {
     margin-bottom: 0;
     color:white;
-    font-family: 'Work Sans', sans-serif;
     /* font-size: 1rem; */
     text-align: center;
     box-shadow:inset 0px 0px 2vh 0.3vh #607596;
