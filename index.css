@@ -48,14 +48,11 @@ a:hover{
 
 
 .bottombar {
-  width:100%;
-  position: fixed;
-  bottom: 2vh;
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
 .bottombar>a {
-  margin-bottom: -2vh;
+  /* margin-bottom: -2vh; */
   color:white;
   font-family: 'CMU classic serif';
   text-shadow: 0.5px 0.5px 0.5px grey;
@@ -74,15 +71,14 @@ a:hover{
   background-color:#7ee6e6;
 }
 
-
-::-webkit-scrollbar {
+.grid>div::-webkit-scrollbar {
     width: 5vw;
 }
 
-::-webkit-scrollbar-track {
+.grid>div::-webkit-scrollbar-track {
 }
 
-::-webkit-scrollbar-thumb {
+.grid>div::-webkit-scrollbar-thumb {
   margin-bottom: 5vh;
   box-shadow:inset 0px 0px 2vh 0.3vh #d5e5ff;
   background:linear-gradient(to right, #ccff4e 2%, #7e96e8 70%);
@@ -156,32 +152,6 @@ a:hover{
   }
   .icons img{
     transform:scale(0.4, 0.4);
-  }
-  .bottombar {
-    width:100vw;
-    position: fixed;
-    bottom: 0;
-    display: grid;
-    grid-template-columns:  0.3fr;
-    grid-template-rows:  1fr 1fr;
-  }
-  .bottombar>a {
-    margin-bottom: 0;
-    text-align: center;
-    box-shadow:inset 0px 0px 2vh 0.3vh #607596;
-  	background:linear-gradient(to bottom, #ffdede 8%, #5344ff 80%);
-  	background-color:#faf4be;
-  	border-radius:50vh;
-  	display:inline-block;
-  	padding:1.2vh 1.2vh;
-  	text-decoration:none;
-  }
-  .bottombar>a:hover {
-    background:linear-gradient(to bottom, #7ee6e6 5%, #fabefa 100%);
-    background-color:#7ee6e6;
-  }
-  ::-webkit-scrollbar {
-      display:none;
   }
   #middle{
     order:1;

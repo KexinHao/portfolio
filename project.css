@@ -27,14 +27,13 @@ hr.divider-solid{
 }
 
 .bottombar {
+  order: 1;
   width:100%;
-  position: fixed;
-  bottom: 2vh;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 .bottombar>a {
-  margin-bottom: -2vh;
+  /* margin-bottom: -2vh; */
   color:white;
   font-family: 'CMU classic serif';
   text-shadow: 0.5px 0.5px 0.5px grey;
@@ -170,7 +169,7 @@ p3{
   p3{
     padding-bottom: 10%;
   }
-  .bottombar {
+  /* .bottombar {
     width:100vw;
     position: fixed;
     bottom: 0;
@@ -180,6 +179,6 @@ p3{
   }
   .bottombar>a {
     margin-bottom: 0;
-  }
+  } */
 
 }
