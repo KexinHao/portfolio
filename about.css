@@ -35,7 +35,7 @@ a:hover{
 p{
   font-family: 'Rubik', sans-serif;
   margin:12px;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 .term{
   width:90%;
@@ -61,10 +61,14 @@ p{
   font-style: italic;
   font-weight: 100;
 }
-small{
+#tags{
   font-family: 'Space Mono', monospace;
-  /* font-size: 1rem; */
   color:rgb(230, 91, 72);
+  font-size: 0.7rem;
+}
+#tags-2-geo{
+  font-family: 'Space Mono', monospace;
+  color:blue;
   font-size: 0.7rem;
 }
 
@@ -153,6 +157,18 @@ small{
   }
   #right p:last-of-type{
     margin-bottom:10rem;
+  }
+  .term{
+    font-size: 1rem;
+  }
+  p{
+    font-size: 0.8rem;
+  }
+  #tags{
+    font-size: 0.5rem;
+  }
+  #tags-2-geo{
+    font-size: 0.5rem;
   }
 
 }
