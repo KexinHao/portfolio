@@ -9,9 +9,7 @@
 }
 
 body{
-    /* display: flex;
-    justify-content: space-between;
-    align-items: flex-start; */
+  font-family: 'Rubik', sans-serif;
 }
 
 a:link, a:visited{
@@ -22,10 +20,6 @@ a:hover, a:active{
   color:white;
   background-color: black;
 }
-hr.divider-solid{
-  border-top: 1.5px solid black;
-}
-
 .bottombar {
   order: 1;
   width:100%;
@@ -51,12 +45,10 @@ hr.divider-solid{
   background:linear-gradient(to bottom, #7ee6e6 5%, #fabefa 100%);
   background-color:#7ee6e6;
 }
-
 .content{
   display: flex;
   flex-direction: row;
 }
-
 .imagebox{
   order: 1;
   width: 67%;
@@ -70,10 +62,8 @@ hr.divider-solid{
 .imagebox::-webkit-scrollbar {
   width: 3.5rem;
 }
-
 .imagebox::-webkit-scrollbar-track {
 }
-
 .imagebox::-webkit-scrollbar-thumb {
   box-shadow:inset 0px 0px 2vh 0.3vh #d5e5ff;
   background:linear-gradient(to right, #ccff4e 2%, #7e96e8 70%);
@@ -83,17 +73,14 @@ hr.divider-solid{
   padding:1.2vh 1.2vh;
   text-decoration:none;
 }
-
 .imagebox img{
   width: 100%;
 }
+
 .text {
   order: 2;
   width: 33%;
   height: 100vh;
-  padding-left: 10px;
-  padding-right: 10px;
-  /* padding-bottom: 25px; */
   overflow-x:hidden;
   overflow-y: scroll;
   -ms-overflow-style: none;
@@ -106,31 +93,41 @@ hr.divider-solid{
   align-items: flex-start;
   flex-wrap:wrap;
 }
+
+p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+h2 {
+    font-size: 130%;
+    margin-bottom: 8px;
+}
+h1 {
+    margin-top: 15px;
+    font-size: 200%;
+    margin-bottom: 10px;
+}
 p4{
   margin-bottom:0.5rem;
   margin-right: 0.4rem;
-  font-family: 'Rubik', sans-serif;
   font-size: 1rem;
   color:white;
   border-radius: 1rem;
   background: black;
   padding: 0.5rem;
 }
-h3{
-  font-family: 'Rubik', sans-serif;
-  margin-bottom: 0.5rem;
-  font-size: 3rem;
+ul{
+  margin-top: -8px;
+  list-style: circle;
+  list-style-position: inside;
 }
-h2{
-  font-family: 'Rubik', sans-serif;
-  margin-bottom: 0.5rem;
-  font-size: 2rem;
-}
-p3{
-  font-family: 'Rubik', sans-serif;
-  margin-top:5vh;
-  font-size: 1rem;
-  padding-bottom: 25%;
+figcaption {
+   font-size: 85%;
+   text-align: right;
+   /* color: white;
+   background-color: black; */
+   padding: 5px;
+   margin-bottom: 8px;
 }
 
 
@@ -160,6 +157,7 @@ p3{
   .text {
     order:1;
     width:100%;
+    padding:5px;
     height: auto;
   }
   h3{
