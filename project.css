@@ -151,12 +151,12 @@ p3{
     width:100%;
     height: auto;
   }
-  .imagebox div:last-of-type{
+  /* .imagebox div:last-of-type{
     margin-bottom:9rem;
   }
   .imagebox img:last-of-type{
     margin-bottom:9rem;
-  }
+  } */
   .text {
     order:1;
     width:100%;
@@ -164,7 +164,7 @@ p3{
   }
   h3{
     margin-bottom: 1rem;
-    font-size: 3.5rem;
+    font-size: 2rem;
   }
   p3{
     padding-bottom: 10%;
