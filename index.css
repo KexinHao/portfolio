@@ -150,6 +150,12 @@ a:hover{
     background:linear-gradient(to bottom, #c27fe8 5%, #defabe 100%);
   	background-color:#c27fe8;
   }
+  .bottombar > a{
+    font-size: 1rem;
+  }
+  .term{
+    font-size: 1rem;
+  }
   .icons img{
     transform:scale(0.4, 0.4);
   }

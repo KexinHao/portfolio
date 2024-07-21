@@ -98,6 +98,31 @@ p{
   background-color:#7ee6e6;
 }
 
+.cutebotton {
+  width:100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.cutebutton > a{
+  /* color:white; */
+  font-family: 'CMU classic serif';
+  text-shadow: 0.5px 0.5px 0.5px grey;
+  font-size: 1.2rem;
+  text-align: center;
+  box-shadow:inset 0px 0px 2vh 0.3vh #607596;
+  background: rgb(228,235,206);
+  background: linear-gradient(0deg, rgba(228,235,206,1) 0%, rgba(80,80,80,1) 20%, rgba(255,255,255,1) 59%, rgba(255,255,255,1) 76%, rgba(206,224,224,1) 100%);
+	border-radius:50vh;
+	display:inline-block;
+	padding:1.2vh 1.2vh;
+	text-decoration:none;
+}
+.cutebutton > a:hover {
+  background: rgb(80,80,80);
+  background: linear-gradient(0deg, rgba(80,80,80,1) 0%, rgba(228,235,206,1) 49%, rgba(206,224,224,1) 100%);
+}
+
 
 /* ::-webkit-scrollbar {
     width: 6vw;
@@ -160,6 +185,12 @@ p{
   }
   .term{
     font-size: 1rem;
+  }
+  .bottombar > a{
+    font-size: 1rem;
+  }
+  .cutebutton > a{
+    font-size: 0.9rem;
   }
   p{
     font-size: 0.8rem;
