@@ -1,0 +1,199 @@
+@font-face {
+  font-family: "CMU classic serif";
+  src: url("font/cmunci.woff") format('woff');
+}
+
+@font-face {
+    font-family: "Apercu-mono";
+    src: url("fonts/Apercu Mono.otf") format("otf");
+}
+
+@font-face {
+    font-family: "Apercu";
+    font-weight: bold;
+    src: url("fonts/Apercu Regular.otf") format("otf");
+}
+
+
+body {
+  background-color: rgb(213, 215, 189);
+}
+
+a{
+  list-style-type: none;
+  text-decoration: none;
+  color:black;
+}
+a:hover {
+  cursor: pointer;
+  font-style: italic;
+}
+
+.bottombar {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.bottombar>a {
+  /* margin-bottom: -2vh; */
+  color:white;
+  font-family: 'CMU classic serif';
+  text-shadow: 0.5px 0.5px 0.5px grey;
+  font-size: 1.5rem;
+  text-align: center;
+  box-shadow:inset 0px 0px 2vh 0.3vh #607596;
+	background:linear-gradient(to bottom, #ffdede 8%, #5344ff 80%);
+	background-color:#faf4be;
+	border-radius:50vh;
+	display:inline-block;
+	padding:1.2vh 1.2vh;
+	text-decoration:none;
+}
+.bottombar>a:hover {
+  background:linear-gradient(to bottom, #7ee6e6 5%, #fabefa 100%);
+  background-color:#7ee6e6;
+}
+
+
+
+.content{
+  display:flex;
+  flex-direction: column;
+}
+
+.block{
+  display:flex;
+  flex-direction: row;
+  margin:1vh;
+  border-bottom: dotted 2px;
+}
+
+.left-column{
+  order:1;
+  width:26%;
+  font-family: 'Apercu';
+  font-size: 2rem;
+  border-right: dotted 2px;
+}
+p {
+  margin:0;
+  padding:0;
+}
+
+.right-column{
+  order:2;
+  width:74%;
+  display: flex;
+  flex-direction: column;
+  margin-top:2rem;
+  margin-left:1rem;
+  margin-bottom:1rem;
+}
+
+.row{
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  margin:0.2rem;
+}
+
+.title{
+  font-family: 'Apercu';
+  font-size: 1.5rem;
+}
+
+.label{
+  display: flex;
+  flex-direction: row;
+  justify-content:flex-end;
+}
+.label > div{
+  font-family: 'Apercu-mono';
+  font-size: 0.8rem;
+  color:black;
+  border: 1px black dotted;
+  background-color: rgb(204, 204, 204);
+  border-radius:5vh;
+  padding:0.7vh 0.7vh;
+}
+#type-1{
+  background-color: rgb(255, 166, 47);
+}
+#type-2{
+  background-color: rgb(94, 125, 36);
+}
+#type-3{
+  background-color: rgb(187, 121, 189);
+}
+#type-4{
+  background-color: rgb(138, 121, 189);
+}
+
+
+
+
+
+@media screen and (max-width: 600px) {
+  .bottombar > a{
+    font-size: 1rem;
+  }
+
+
+  .block{
+    display:flex;
+    flex-direction: column;
+    margin:1vh;
+    border:0;
+  }
+
+  .left-column{
+    order:1;
+    width:100%;
+    font-family: 'Apercu';
+    font-size: 1rem;
+    border-bottom: dotted 2px;
+    border-right:0;
+  }
+  p {
+    margin:0;
+    padding:0;
+  }
+
+  .right-column{
+    order:2;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    margin-top:0;
+    margin-left:0;
+    margin-bottom:0;
+    border:0;
+  }
+
+  .row{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    /* margin:0; */
+  }
+
+  .title{
+    font-family: 'Apercu';
+    font-size: 1rem;
+  }
+
+  .label{
+    display: none;
+    /* flex-direction: row;
+    justify-content:flex-end; */
+  }
+  /* .label > div{
+    font-family: 'Apercu-mono';
+    font-size: 0.5rem;
+    color:white;
+    border: 1px white dotted;
+    background-color: black;
+    border-radius:5vh;
+    padding:0.7vh 0.7vh;
+  } */
+
+}

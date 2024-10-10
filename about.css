@@ -18,6 +18,17 @@ body{
   src: url("font/cmunci.woff") format('woff');
 }
 
+@font-face {
+    font-family: "Apercu-mono";
+    src: url("fonts/Apercu Mono.otf") format("otf");
+}
+
+@font-face {
+    font-family: "Apercu";
+    font-weight: bold;
+    src: url("fonts/Apercu Regular.otf") format("otf");
+}
+
 
 hr.divider-solid{
   border-top: 1.5px solid black;
@@ -33,7 +44,7 @@ a:hover{
 }
 
 p{
-  font-family: 'Rubik', sans-serif;
+  font-family: 'Apercu';
   margin:12px;
   font-size: 1.1rem;
 }
@@ -58,11 +69,11 @@ p{
 }
 #special{
   font-family: 'Fraunces', serif;
-  font-style: italic;
+  /* font-style: italic; */
   font-weight: 100;
 }
 #tags{
-  font-family: 'Space Mono', monospace;
+  font-family: 'Apercu-mono';
   color:rgb(230, 91, 72);
   font-size: 0.7rem;
 }

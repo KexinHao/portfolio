@@ -15,7 +15,7 @@ body{
     overflow-x: hidden;
 }
 
-a:link, a:visited, a:hover, a:active{
+/* a:link, a:visited, a:hover, a:active{
   text-decoration: none;
   color:black;
 }
@@ -23,7 +23,7 @@ a:hover{
   background-color: black;
   color: white;
   cursor: pointer;
-}
+} */
 
 
 .term{
@@ -117,6 +117,7 @@ a:hover{
 .grid img{
   width: 100%;
 }
+
 
 
 @media only screen and (max-width: 660px) {

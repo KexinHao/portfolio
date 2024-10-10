@@ -8,8 +8,19 @@
   src: url("font/cmunci.woff") format('woff');
 }
 
+@font-face {
+    font-family: "Apercu-mono";
+    src: url("fonts/Apercu Mono.otf") format("otf");
+}
+
+@font-face {
+    font-family: "Apercu";
+    font-weight: bold;
+    src: url("fonts/Apercu Regular.otf") format("otf");
+}
+
 body{
-  font-family: 'Rubik', sans-serif;
+  font-family: 'Apercu';
 }
 
 a:link, a:visited{
@@ -108,13 +119,15 @@ h1 {
     margin-bottom: 10px;
 }
 p4{
-  margin-bottom:0.5rem;
-  margin-right: 0.4rem;
-  font-size: 1rem;
+  font-family: 'Apercu-mono';
+  font-size: 0.8rem;
   color:white;
-  border-radius: 1rem;
-  background: black;
-  padding: 0.5rem;
+  border: 1px white dotted;
+  background-color: black;
+  border-radius:5vh;
+  display:inline-block;
+  margin:0.5vh;
+  padding:0.7vh 0.7vh;
 }
 ul{
   margin-top: -8px;
