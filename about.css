@@ -20,13 +20,13 @@ body{
 
 @font-face {
     font-family: "Apercu-mono";
-    src: url("fonts/Apercu Mono.otf") format("otf");
+    src: url("font/Apercu Mono.otf") format("otf");
 }
 
 @font-face {
     font-family: "Apercu";
     font-weight: bold;
-    src: url("fonts/Apercu Regular.otf") format("otf");
+    src: url("font/Apercu Regular.otf") format("otf");
 }
 
 
