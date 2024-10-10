@@ -10,13 +10,12 @@
 
 @font-face {
     font-family: "Apercu-mono";
-    src: url("font/Apercu/Apercu Mono.otf") format("otf");
+    src: url("font/Apercu/Apercu Mono.otf") format("opentype");
 }
 
 @font-face {
     font-family: "Apercu";
-    font-weight: bold;
-    src: url("font/Apercu/Apercu Regular.otf") format("otf");
+    src: url("font/Apercu/Apercu Regular.otf") format("opentype");
 }
 
 body{
