@@ -144,7 +144,6 @@ figcaption {
 
 
 
-
 @media only screen and (max-width: 800px) {
   ::-webkit-scrollbar {
       display:none;
@@ -154,6 +153,9 @@ figcaption {
     flex-direction: column;
     overflow-y: scroll;
     overflow-x: hidden;
+  }
+  .bottombar > a{
+    font-size: 1rem;
   }
   .imagebox{
     order:2;

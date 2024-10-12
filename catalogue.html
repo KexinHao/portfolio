@@ -4,14 +4,13 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Kexin Hao</title>
-
   <!-- include stylesheets here -->
   <link rel="stylesheet" href="catalogue.css" />
   <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Work+Sans:200&display=swap" rel="stylesheet">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
+
 <body>
 
 
@@ -24,58 +23,131 @@
 
   <div class="content">
 
+    <div class="topblock">
+       <div class="left">
+        <a href="other media/CV_Kexin-Hao.pdf">download CV</a>
+       </div>
+        <div class="mid">
+          <a href="other media/Kexin-Hao.pdf">download portfolio</a>
+        </div>
+        <div class="mid">
+          <a class="cutebutton" href="mailto:kexinhao01111993@gmail.com" target="_blank">Email</a>
+        </div>
+        <div class="right">
+          <a class="cutebutton" href="https://www.instagram.com/kexin_hao/" target="_blank">instagram</a>
+        </div>
+  </div>
+
+    <div id="myBtnContainer">
+      <button class="btn active" onclick="filterSelection('all')">Show all</button>
+      <button class="btn" id="type-autowork"onclick="filterSelection('autowork')">autonomous projects</button>
+      <button class="btn" id="type-designwork" onclick="filterSelection('designwork')">design commissions</button>
+      <!-- <button class="btn" id="type-gradwork" onclick="filterSelection('gradwork')">graduation work</button> -->
+      <!-- <button class="btn" id="type-autowork" onclick="filterSelection('autowork')">school projects</button> -->
+    </div>
+    <div id="myBtnContainer">
+      <button class="btn" onclick="filterSelection('performance')">performance</button>
+      <button class="btn" onclick="filterSelection('audio-visual')">audio-visual</button>
+      <button class="btn" onclick="filterSelection('video')">video</button>
+      <button class="btn" onclick="filterSelection('installation')">installation</button>
+      <button class="btn" onclick="filterSelection('publicintervention')">public intervention</button>
+      <button class="btn" onclick="filterSelection('soundart')">sound art</button>
+      <button class="btn" onclick="filterSelection('livemusic')">live music</button>
+      <button class="btn" onclick="filterSelection('photography')">photography</button>
+      <button class="btn" onclick="filterSelection('printedmatter')">printed matter</button>
+      <button class="btn" onclick="filterSelection('drawing')">drawing</button>
+      <button class="btn" onclick="filterSelection('interactivemedia')">interactive media</button>
+      <button class="btn" onclick="filterSelection('graphicdesign')">graphic design</button>
+      <button class="btn" onclick="filterSelection('publishing')">publishing</button>
+      <button class="btn" onclick="filterSelection('book')">book</button>
+      <button class="btn" onclick="filterSelection('poster')">poster</button>
+      <button class="btn" onclick="filterSelection('website')">website</button>
+      <button class="btn" onclick="filterSelection('package')">package</button>
+      <!-- <button class="btn" id="type-gradwork" onclick="filterSelection('gradwork')">graduation work</button> -->
+      <!-- <button class="btn" id="type-autowork" onclick="filterSelection('autowork')">school projects</button> -->
+    </div>
+
     <div class="block" id="2024">
         <div class="left-column">
           <p id="year">2024</p>
         </div>
-        <div class="right-column">
-          <div class="row">
-            <div class="title"><a href="project/lewd-banquet.html">Lewd Banquet</a></div>
-            <div class="label"><div id="type-1">Jan Van Eyck</div><div>performance</div><div>audio-visual</div><div>installation</div><div>drawing</div></div>
+
+        <div class="mid-column">
+          <div class="filterDiv autowork performance audio-visual video installation drawing soundart">
+            <div class="title" id="lewdbanquet"><a href="project/lewd-banquet.html">Lewd Banquet</a></div>
           </div>
-          <div class="row">
-            <div class="title"><a href="project/sticker-album.html">Chinees-indisch Restaurant Stickeralbum</a></div>
-            <div class="label"><div id="type-3">design commission</div><div>graphic design</div><div>book</div></div>
+          <div class="filterDiv designwork publishing printedmatter book">
+            <div class="title" id="stickeralbum"><a href="project/sticker-album.html">Chinees-indisch Restaurant Stickeralbum</a></div>
+            <!-- <div class="label"><div id="type-3">design commission</div><div>graphic design</div><div>book</div></div> -->
           </div>
         </div>
+
+        <div class="right-column">
+          <div id="imagelewdbanquet">
+            <img src="preview/Lewd-Banquet_1.jpg">
+          </div>
+          <div id="imagestickeralbum">
+            <img src="preview/sticker-album.jpg">
+          </div>
+        </div>
+
     </div>
 
+
     <div class="block" id="2023">
+
         <div class="left-column">
           <p id="year">2023</p>
         </div>
-        <div class="right-column">
-          <div class="row">
-            <div class="title"><a href="project/kabk-campaign.html">KABK Graduation Show & Open Day Campaign</a></div>
-            <div class="label"><div id="type-3">design commission</div><div>graphic design</div><div>festival identity</div></div>
+
+        <div class="mid-column">
+          <div class="filterDiv designwork printedmatter photography drawing graphicdesign poster">
+            <div class="title" id="kabkcampaign"><a href="project/kabk-campaign.html">KABK Graduation Show & Open Day Campaign</a></div>
           </div>
-          <div class="row">
-            <div class="title"><a href="project/liminal-wild-live.html">Liminal Wild: live</a></div>
-            <div class="label"><div id="type-1">CBK R&D</div><div>performance</div><div>poster</div></div>
+          <div class="filterDiv autowork audio-visual performance video printedmatter drawing graphicdesign poster">
+            <div class="title" id="liminalwild"><a href="project/liminal-wild-live.html">Liminal Wild: live</a></div>
           </div>
-          <div class="row">
-            <div class="title"><a href="project/pound-it.html">Forceful Catering</a></div>
-            <div class="label"><div id="type-1">V2_ Summer Session</div><div id="type-1">Amarte x WORM</div><div>performance</div><div>live music</div><div>catering</div></div>
+          <div class="filterDiv autowork performance livemusic soundart">
+            <div class="title" id="poundit"><a href="project/pound-it.html">Forceful Catering</a></div>
           </div>
         </div>
+
+        <div class="right-column">
+          <div id="imagekabkcampaign">
+            <img src="preview/kabk-campaign.webp">
+          </div>
+          <div id="imageliminalwild">
+            <img src="preview/neural_poster_230711_for-web-low-res.jpg">
+          </div>
+          <div id="imagepoundit">
+            <img src="preview/poundit-amos.JPG">
+          </div>
+        </div>
+
     </div>
+
 
     <div class="block" id="2022">
         <div class="left-column">
           <p>2022</p>
         </div>
+
+        <div class="mid-column">
+          <div class="filterDiv designwork book graphicdesign publishing">
+            <div class="title" id="braids"><a href="project/braids-journal.html">BRAIDS Journal</a></div>
+          </div>
+          <div class="filterDiv autowork interactivemedia audio-visual performance installation">
+            <div class="title" id="fdon"><a href="project/future-dance-of-nostalgia_new.html">Future Dance of Nostlagia</a></div>
+          </div>
+        </div>
+
         <div class="right-column">
-
-          <div class="row">
-            <div class="title"><a href="project/braids-journal.html">BRAIDS Journal</a></div>
-            <div class="label"><div id="type-3">design commission</div><div>graphic design</div><div>book</div></div>
+          <div id="imagebraids">
+            <img src="preview/Scan-0.png">
           </div>
-
-          <div class="row">
-            <div class="title"><a href="project/future-dance-of-nostalgia_new.html">Future Dance of Nostlagia</a></div>
-            <div class="label"><div id="type-1">iii residency</div><div>interactive media</div><div>performance</div></div>
+          <div id="imagefdon">
+            <img src="preview/FDON_preview.jpg">
           </div>
-
         </div>
     </div>
 
@@ -83,23 +155,31 @@
         <div class="left-column">
           <p>2021</p>
         </div>
+
+        <div class="mid-column">
+          <div class="filterDiv autowork gradwork performance video printedmatter photography graphicdesign book poster">
+            <div class="title" id="tbw"><a href="project/total-body-workout.html">Total Body Workouut</a></div>
+          </div>
+
+          <div class="filterDiv designwork package graphicdesign">
+            <div class="title" id="puzzle"><a href="project/puzzle-box.html">Nr.39 met Rijst</a></div>
+          </div>
+
+          <div class="filterDiv designwork website">
+            <div class="title" id="hgtomirosa"><a href="project/hgtomirosa.html">Hgtomi Rosa</a></div>
+          </div>
+        </div>
+
         <div class="right-column">
-
-          <div class="row">
-            <div class="title"><a href="project/total-body-workout.html">Total Body Workouut</a></div>
-            <div class="label"><div id="type-2">graduation work</div><div>performance</div><div>graphic design</div><div>book</div><div>audio-visual</div></div>
+          <div id="imagetbw">
+            <img src="preview/TBW.jpg">
           </div>
-
-          <div class="row">
-            <div class="title"><a href="project/puzzle-box.html">Nr.39 met Rijst</a></div>
-            <div class="label"><div id="type-3">design commission</div><div>graphic design</div><div>package</div></div>
+          <div id="imagepuzzle">
+            <img src="preview/DSC_0296_2.jpg">
           </div>
-
-          <div class="row">
-            <div class="title"><a href="project/hgtomirosa.html">Hgtomi Rosa</a></div>
-            <div class="label"><div id="type-3">design commission</div><div>graphic design</div><div>website</div></div>
+          <div id="imagehgtomirosa">
+            <img src="preview/desktop.webp">
           </div>
-
         </div>
     </div>
 
@@ -107,48 +187,66 @@
         <div class="left-column">
           <p>2020</p>
         </div>
+
+        <div class="mid-column">
+          <div class="filterDiv designwork graphicdesign poster">
+            <div class="title" id="w139"><a href="project/w139.html">Exhibition Campaign W139</a></div>
+          </div>
+
+          <div class="filterDiv autowork performance website graphicdesign">
+            <div class="title" id="neostalgia"><a href="https://kexinhao.github.io/neostalgictable/" target="_blank">Neostalgic Table</a></div>
+          </div>
+
+          <div class="filterDiv designwork book publishing printedmatter graphicdesign">
+            <div class="title" id="fakechinese"><a href="project/fake-china.html">Fake Chinese</a></div>
+          </div>
+
+          <div class="filterDiv autowork website performance">
+            <div class="title" id="fixxxiontv"><a href="project/fixxxiontv.html">fixxxion TV</a></div>
+          </div>
+
+          <div class="filterDiv autowork graphicdesign">
+            <div class="title" id="pngpng"><a href="project/png.html">PNG.png</a></div>
+          </div>
+
+          <div class="filterDiv autowork performance">
+            <div class="title" id="wfff"><a href="project/wfff.html">World Fusion Food Foundry</a></div>
+          </div>
+
+          <div class="filterDiv autowork graphicdesign publicintervention">
+            <div class="title" id="unfolding"><a href="project/unfolding.html">Truth Unfolds Here</a></div>
+          </div>
+
+          <div class="filterDiv autowork graphicdesign audio-visual">
+            <div class="title" id="taoistmap"><a href="project/taoist-map.html">Taoist Corporeal Map</a></div>
+          </div>
+        </div>
+
         <div class="right-column">
-
-          <div class="row">
-            <div class="title"><a href="project/w139.html">Exhibition Campaign W139</a></div>
-            <div class="label"><div id="type-3">design commission</div><div>graphic design</div><div>poster</div><div>stickers</div></div>
+          <div id="imagew139">
+            <img src="preview/w139.jpg">
           </div>
-
-          <div class="row">
-            <div class="title"><a href="https://kexinhao.github.io/neostalgictable/" target="_blank">Neostalgic Table</a></div>
-            <div class="label"><div id="type-4">school project</div><div>graphic design</div><div>website</div><div>manifesto</div></div>
+          <div id="imageneostalgia">
+            <img src="preview/neostalgiatable.png">
           </div>
-
-          <div class="row">
-            <div class="title"><a href="project/fake-china.html">Fake Chinese</a></div>
-            <div class="label"><div id="type-3">design commission</div><div>graphic design</div><div>book</div></div>
+          <div id="imagefakechinese">
+            <img src="preview/FC_scan-cover.png">
           </div>
-
-          <div class="row">
-            <div class="title"><a href="project/fixxxiontv.html">fixxxion TV</a></div>
-            <div class="label"><div id="type-4">school project</div><div>performance</div><div>graphic design</div><div>website</div></div>
+          <div id="imagefixxxiontv">
+            <img src="preview/fixxxiontv.jpg">
           </div>
-
-          <div class="row">
-            <div class="title"><a href="project/png.html">PNG.png</a></div>
-            <div class="label"><div>graphic design</div></div>
+          <div id="imagepngpng">
+            <img src="preview/png.png">
           </div>
-
-          <div class="row">
-            <div class="title"><a href="project/wfff.html">World Fusion Food Foundry</a></div>
-            <div class="label"><div id="type-4">school project</div><div>performance</div></div>
+          <div id="imagewfff">
+            <img src="preview/cookingshow.jpg">
           </div>
-
-          <div class="row">
-            <div class="title"><a href="project/unfolding.html">Truth Unfolds Here</a></div>
-            <div class="label"><div id="type-4">school project</div><div>graphic design</div><div>performance</div></div>
+          <div id="imageunfolding">
+            <img src="preview/unfolding4.jpg">
           </div>
-
-          <div class="row">
-            <div class="title"><a href="project/taoist-map.html">Taoist Corporeal Map</a></div>
-            <div class="label"><div id="type-4">school project</div><div>audio-visual</div><div>graphic design</div></div>
+          <div id="imagetaoistmap">
+            <img src="preview/map.jpg">
           </div>
-
         </div>
     </div>
 
@@ -156,58 +254,78 @@
         <div class="left-column">
           <p>2019</p>
         </div>
+        <div class="mid-column">
+          <div class="filterDiv autowork video">
+            <div class="title" id="tiktok"><a href="project/together-alone.html">Together Alone</a></div>
+          </div>
+
+          <div class="filterDiv autowork interactivemedia installation video">
+            <div class="title" id="romancolumn"><a href="project/roman-columns.html">124 + 625 Roman Columns</a></div>
+          </div>
+
+          <div class="filterDiv designwork book publishing graphicdesign printedmatter">
+            <div class="title" id="trance"><a href="project/trance.html">TRANCE Zine</a></div>
+          </div>
+
+          <div class="filterDiv autowork website video">
+            <div class="title" id="lonelyhearts"><a href="project/lonely-heart-portal.html">Lonely Heart Portal</a></div>
+          </div>
+
+          <div class="filterDiv autowork graphicdesign">
+            <div class="title" id="duolanguage"><a href="project/bilingual-logos.html">Bilingual Logos</a></div>
+          </div>
+
+          <div class="filterDiv autowork website">
+            <div class="title" id="chimeralab"><a href="chimeralab/index.html"target="_blank">Chimera Lab</a></div>
+          </div>
+
+          <div class="filterDiv autowork book graphicdesign printedmatter">
+            <div class="title" id="helooks"><a href="project/he-looks.html">He Looks</a></div>
+          </div>
+
+          <div class="filterDiv autowork website">
+            <div class="title" id="higoogle"><a href="project/hi-google.html">Hi Google!</a></div>
+          </div>
+
+          <div class="filterDiv autowork publicintervention graphicdesign poster printedmatter">
+            <div class="title" id="royalnail"><a href="project/royal-nail-salon.html">Royal Nail Salon</a></div>
+          </div>
+
+          <div class="filterDiv autowork video">
+            <div class="title" id="renovation"><a href="project/school-renovation.html">Documentary of School Renovation</a></div>          </div>
+        </div>
+
         <div class="right-column">
-
-          <div class="row">
-            <div class="title"><a href="project/together-alone.html">Together Alone</a></div>
-            <div class="label"><div id="type-4">school project</div><div>video</div></div>
+          <div id="imagetiktok">
+            <img src="preview/tiktok2.png">
           </div>
-
-          <div class="row">
-            <div class="title"><a href="project/roman-columns.html">124 + 625 Roman Columns</a></div>
-            <div class="label"><div id="type-4">school project</div><div>video</div><div>interactive media</div></div>
+          <div id="imageromancolumn">
+            <img src="preview/romancolumn.jpg">
           </div>
-
-          <div class="row">
-            <div class="title"><a href="project/trance.html">TRANCE Zine</a></div>
-            <div class="label"><div>publishing</div><div>graphic design</div><div>book</div></div>
+          <div id="imagetrance">
+            <img src="preview/trance_scan.jpg">
           </div>
-
-          <div class="row">
-            <div class="title"><a href="project/lonely-heart-portal.html">Lonely Heart Portal</a></div>
-            <div class="label"><div id="type-4">school project</div><div>interactive media</div><div>video</div></div>
+          <div id="imagelonelyhearts">
+            <img src="preview/lonelyhearts.jpg">
           </div>
-
-          <div class="row">
-            <div class="title"><a href="project/bilingual-logos.html">Bilingual Logos</a></div>
-            <div class="label"><div id="type-4">school project</div><div>graphic design</div></div>
+          <div id="imageduolanguage">
+            <img src="preview/duolanguage.jpg">
           </div>
-
-          <div class="row">
-            <div class="title"><a href="chimeralab/index.html"target="_blank">Chimera Lab</a></div>
-            <div class="label"><div id="type-4">school project</div><div>website</div></div>
+          <div id="imagechimeralab">
+            <img src="preview/chimeralab.png">
           </div>
-
-          <div class="row">
-            <div class="title"><a href="project/he-looks.html">He Looks</a></div>
-            <div class="label"><div id="type-4">school project</div><div>graphic design</div><div>book</div></div>
+          <div id="imagehelooks">
+            <img src="preview/helooks.png">
           </div>
-
-          <div class="row">
-            <div class="title"><a href="project/hi-google.html">Hi Google!</a></div>
-            <div class="label"><div id="type-4">school project</div><div>website</div></div>
+          <div id="imagehigoogle">
+            <img src="preview/higoogle.png">
           </div>
-
-          <div class="row">
-            <div class="title"><a href="project/royal-nail-salon.html">Royal Nail Salon</a></div>
-            <div class="label"><div id="type-4">school project</div><div>graphic design</div><div>public intervention</div></div>
+          <div id="imageroyalnail">
+            <img src="preview/royalnailsalon.jpg">
           </div>
-
-          <div class="row">
-            <div class="title"><a href="project/school-renovation.html">Documentary of School Renovation</a></div>
-            <div class="label"><div id="type-4">school project</div><div>video</div></div>
+          <div id="imagerenovation">
+            <img src="preview/renovation.jpg">
           </div>
-
         </div>
     </div>
 
@@ -215,23 +333,28 @@
         <div class="left-column">
           <p>2018</p>
         </div>
+
+        <div class="mid-column">
+          <div class="filterDiv autowork video performance">
+            <div class="title" id="boogie"><a href="project/yes-sir-i-can-boogie.html">Yes Sir, I Can Boogie</a></div>
+          </div>
+
+          <div class="filterDiv autowork installation video">
+            <div class="title" id="finaltable"><a href="project/final-table.html">Your Final Table</a></div>
+          </div>
+        </div>
+
         <div class="right-column">
-
-          <div class="row">
-            <div class="title"><a href="project/yes-sir-i-can-boogie.html">Yes Sir, I Can Boogie</a></div>
-            <div class="label"><div id="type-4">school project</div><div>performance</div><div>video</div></div>
+          <div id="imageboogie">
+            <img src="preview/boogie.jpg">
           </div>
-
-          <div class="row">
-            <div class="title"><a href="project/final-table.html">Your Final Table</a></div>
-            <div class="label"><div id="type-4">school project</div><div>installation</div><div>video</div></div>
+          <div id="imagefinaltable">
+            <img src="preview/finaltable.jpg">
           </div>
-
         </div>
     </div>
 
   </div>
-
-
+  <script src="catalogue.js"></script>
 </body>
 </html>

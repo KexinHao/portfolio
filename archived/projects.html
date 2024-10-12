@@ -12,12 +12,9 @@
 <script>
 
 $(function(){
-  $('.topbar').click(function(){
-      $('#navbar').toggle();
-        // window.location.hash = target;
-      });
+
 // $(function(){
-   $('.title').click(function(){
+   $('.title').hover(function(){
        $('#image' + $(this).attr('id')).show();
        $('.imagebox > div').not('#image' + $(this).attr('id')).hide();
        $('#text' + $(this).attr('id')).show();
