@@ -91,6 +91,7 @@ a:hover, a:active{
   order: 2;
   width: 33%;
   height: 100vh;
+  margin-right: 1rem;
   overflow-x:hidden;
   overflow-y: scroll;
   -ms-overflow-style: none;
@@ -170,7 +171,7 @@ figcaption {
   } */
   .text {
     order:1;
-    width:100%;
+    width:95%;
     padding:5px;
     height: auto;
   }
