@@ -41,6 +41,7 @@
     <div id="myBtnContainer">
       <button class="btn active" onclick="filterSelection('all')">Show all</button>
       <button class="btn" id="type-autowork"onclick="filterSelection('autowork')">autonomous projects</button>
+      <button class="btn" id="type-edition"onclick="filterSelection('edition')">edition</button>
       <button class="btn" id="type-designwork" onclick="filterSelection('designwork')">design commissions</button>
       <!-- <button class="btn" id="type-gradwork" onclick="filterSelection('gradwork')">graduation work</button> -->
       <!-- <button class="btn" id="type-autowork" onclick="filterSelection('autowork')">school projects</button> -->
@@ -51,7 +52,7 @@
       <button class="btn" onclick="filterSelection('video')">video</button>
       <button class="btn" onclick="filterSelection('installation')">installation</button>
       <button class="btn" onclick="filterSelection('publicintervention')">public intervention</button>
-      <button class="btn" onclick="filterSelection('soundart')">sound art</button>
+      <!-- <button class="btn" onclick="filterSelection('soundart')">sound art</button> -->
       <button class="btn" onclick="filterSelection('livemusic')">live music</button>
       <button class="btn" onclick="filterSelection('photography')">photography</button>
       <button class="btn" onclick="filterSelection('printedmatter')">printed matter</button>
@@ -76,6 +77,12 @@
           <div class="filterDiv autowork performance audio-visual video installation drawing soundart">
             <div class="title" id="lewdbanquet"><a href="project/lewd-banquet.html">Lewd Banquet</a></div>
           </div>
+          <div class="filterDiv edition drawing">
+            <div class="title" id="creeps"><a href="project/creeps-garden-of-eden.html">Creep's Garden of Eden</a></div>
+          </div>
+          <div class="filterDiv edition drawing">
+            <div class="title" id="decomposers"><a href="project/diary-of-decomposers.html">Diary of Compost Creatures</a></div>
+          </div>
           <div class="filterDiv designwork publishing printedmatter book">
             <div class="title" id="stickeralbum"><a href="project/sticker-album.html">Chinees-indisch Restaurant Stickeralbum</a></div>
             <!-- <div class="label"><div id="type-3">design commission</div><div>graphic design</div><div>book</div></div> -->
@@ -85,6 +92,12 @@
         <div class="right-column" id="of2024">
           <div id="imagelewdbanquet">
             <img src="preview/Lewd-Banquet_1.jpg">
+          </div>
+          <div id="imagecreeps">
+            <img src="preview/creepers-garden-of-eden.jpg">
+          </div>
+          <div id="imagedecomposers">
+            <img src="preview/slugs.JPG">
           </div>
           <div id="imagestickeralbum">
             <img src="preview/sticker-album.jpg">
@@ -101,6 +114,9 @@
         </div>
 
         <div class="mid-column">
+          <div class="filterDiv edition drawing">
+            <div class="title" id="house-of-our-own"><a href="project/house-of-our-own.html">A House of Our Own</a></div>
+          </div>
           <div class="filterDiv designwork printedmatter photography drawing graphicdesign poster">
             <div class="title" id="kabkcampaign"><a href="project/kabk-campaign.html">KABK Graduation Show & Open Day Campaign</a></div>
           </div>
@@ -113,6 +129,9 @@
         </div>
 
         <div class="right-column">
+          <div id="imagehouse-of-our-own">
+            <img src="preview/A-House-of-Our-Own_WEB.jpg">
+          </div>
           <div id="imagekabkcampaign">
             <img src="preview/kabk-campaign.webp">
           </div>

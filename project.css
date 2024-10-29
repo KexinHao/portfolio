@@ -30,6 +30,7 @@ a:hover, a:active{
   color:white;
   background-color: black;
 }
+
 .bottombar {
   order: 1;
   width:100%;
@@ -55,10 +56,12 @@ a:hover, a:active{
   background:linear-gradient(to bottom, #7ee6e6 5%, #fabefa 100%);
   background-color:#7ee6e6;
 }
+
 .content{
   display: flex;
   flex-direction: row;
 }
+
 .imagebox{
   order: 1;
   width: 67%;
@@ -70,20 +73,33 @@ a:hover, a:active{
 }
 /* .imagebox::-webkit-scrollbar { width: 0 !important } */
 .imagebox::-webkit-scrollbar {
-  width: 3.5rem;
+  width: 5vw;
 }
 .imagebox::-webkit-scrollbar-track {
 }
 .imagebox::-webkit-scrollbar-thumb {
-  box-shadow:inset 0px 0px 2vh 0.3vh #d5e5ff;
-  background:linear-gradient(to right, #ccff4e 2%, #7e96e8 70%);
-  background-color:#c4fff3;
+  box-shadow: rgba(10, 37, 64, 0.28) 0px -32px 16px 3px inset;
+  background: linear-gradient(90deg, rgba(227,255,176,0.9122242647058824) 0%, rgba(255,253,226,0.8225884103641457) 36%, rgba(104,100,159,0.7469581582633054) 67%, rgba(132,125,156,0.8786108193277311) 87%, rgba(204,163,255,0.8393951330532212) 100%);
   border-radius:50vh;
   display:inline-block;
   padding:1.2vh 1.2vh;
   text-decoration:none;
 }
 .imagebox img{
+  width: 100%;
+}
+
+.imagebox-collage {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.imagebox-collage > div{
+  width: 25%;
+  margin:1vw;
+}
+.imagebox-collage > div >img{
   width: 100%;
 }
 
@@ -169,6 +185,14 @@ figcaption {
   .imagebox img:last-of-type{
     margin-bottom:9rem;
   } */
+
+  .imagebox-collage {
+    flex-direction: column;
+  }
+  .imagebox-collage > div{
+    width: 100%;
+  }
+
   .text {
     order:1;
     width:95%;
