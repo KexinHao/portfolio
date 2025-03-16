@@ -157,23 +157,35 @@ a:hover, a:active{
   /* margin-right: 50%; */
   /* width: 50%; */
 }
-.imagebox>img{
-  display: block;
+.imagebox > div{
   margin:1rem;
-  max-width:50rem;
+  /* max-width:50rem; */
 }
 #L-pic{
-  max-width:50rem;
+  width:50rem;
   height:auto;
 }
 #M-pic{
-  max-width:35rem;
+  width:35rem;
   height:auto;
 }
 #S-pic{
-  max-width:20rem;
+  width:20rem;
   height:auto;
 }
+.imagebox > div > img{
+  display: block;
+  width:100%;
+}
+figcaption {
+   font-size: 85%;
+   text-align: right;
+   /* color: white;
+   background-color: black; */
+   padding: 5px;
+   margin-bottom: 8px;
+}
+
 
 
 @media screen and (max-width: 800px) {
