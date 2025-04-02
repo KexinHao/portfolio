@@ -37,7 +37,7 @@ a:hover, a:active{
   order: 1;
   width:100%;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 .bottombar>a {
   /* margin-bottom: -2vh; */
@@ -100,6 +100,10 @@ a:hover, a:active{
 .bottom-sub-row-right-column{
   padding-left:0.5rem;
 }
+#italic-in-block{
+  font-family: 'CMU classic serif', serif;
+  font-style: italic;
+}
 
 
 
@@ -160,6 +164,11 @@ a:hover, a:active{
 .imagebox > div{
   margin:1rem;
   /* max-width:50rem; */
+}
+
+#XL-pic{
+  width:80rem;
+  height:auto;
 }
 #L-pic{
   width:50rem;
