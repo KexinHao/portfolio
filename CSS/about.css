@@ -23,6 +23,11 @@ body{
 }
 
 @font-face {
+  font-family: "HN-Times-Dublex-Italic-Light";
+  src: url("../font/hershey-noailles/Hershey-Noailles-Times-Duplex-Italic-Light.woff") format('woff');
+}
+
+@font-face {
   font-family: "CMU classic serif";
   src: url("../font/cmunci.woff") format('woff');
 }
@@ -41,9 +46,14 @@ body{
 hr.divider-solid{
   border-top: 1.5px solid black;
 }
-a:link, a:visited, a:hover, a:active{
+a:link {
   text-decoration: none;
   color:black;
+}
+p > a:link, a:visited, a:hover, a:active{
+  text-decoration: underline;
+  color:black;
+  font-family: "HN-Times-Dublex-Italic-Light";
 }
 
 
@@ -136,7 +146,7 @@ a:link, a:visited, a:hover, a:active{
 }
 
 #biography > .term {
-  color:#ffb8e0;
+  color:#f2d1ff;
 }
 
 #education > .term {
@@ -167,6 +177,10 @@ a:link, a:visited, a:hover, a:active{
   background-color:#89c4e2;
 }
 
+#contact > .term {
+  color:#f2d1ff;
+}
+
 #clients > .term {
   color:#b3b6ff;
 }
@@ -179,6 +193,13 @@ a:link, a:visited, a:hover, a:active{
 }
 #agenda > div > div:nth-child(1), #agenda > div > div:nth-child(2), #agenda > div > div:nth-child(3), #agenda > div > div:nth-child(4){
   background-color:#f2d1ff;
+}
+
+#news > .term{
+  color:#e1ff7e;
+}
+#news > div > div:nth-child(1), #news > div > div:nth-child(2){
+  background-color:#e1ff7e;
 }
 
 .text-section > .roll-typeA{
@@ -221,11 +242,26 @@ grid-template-rows: auto, auto;
 .roll-typeD > .div4 { grid-area: 1 / 4 / 2 / 5; font-size: 0.9rem; align-self: end;}
 .roll-typeD > .div5 { grid-area: 2 / 2 / 3 / 5; }
 
+.text-section > .roll-typeE {
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+grid-template-rows: auto, auto;
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+}
+.roll-typeE > .div1 { grid-area: 1 / 1 / 2 / 2; }
+.roll-typeE > .div2 { grid-area: 1 / 2 / 2 / 5; }
+.roll-typeE > .div3 { grid-area: 2 / 2 / 3 / 3; font-size: 0.9rem; align-self: end;}
+.roll-typeE > .div4 { grid-area: 2 / 3 / 3 / 4; font-size: 0.9rem; align-self: end;}
+.roll-typeE > .div5 { grid-area: 2 / 4 / 3 / 5; font-size: 0.9rem; align-self: end;}
+.roll-typeE > .div6 { grid-area: 3 / 2 / 7 / 5; }
+.roll-typeE > .div6 > img{ max-width: 100%; height: auto;}
 
 
 
 @media only screen and (max-width: 800px) {
   body{
+    font-size: 1.2rem;
     overflow-y: scroll;
   }
   ::-webkit-scrollbar {
