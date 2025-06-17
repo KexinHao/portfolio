@@ -4,22 +4,19 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Kexin Hao</title>
-
-  <!-- include stylesheets here -->
-  <link rel="stylesheet" href="about.css" />
-
-  <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@1,200&display=swap" rel="stylesheet"> -->
-  <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Work+Sans:200&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="CSS/about.css" />
+  <script src="javascript/about.js"></script>
 </head>
+
+
 <body>
 
 
   <div class="bottombar">
     <a href="index.html">home</a>
-    <a href="catalogue.html">catalogue</a>
+    <a href="about.html">about</a>
+    <a href="catalogue.html">projects</a>
+    <a href="agenda.html">what's on</a>
   </div>
 
 
@@ -27,198 +24,302 @@
     <div class="columns">
 
       <div id="left">
-            <p id="intro">
-              Kexin Hao (CN, 1993) is a performance artist and graphic designer born in Beijing and based in The Netherlands. What lies at the core of her art making is the creation of experiences addressing history, society and heritage through bodily engagement. The body in her practice is the research subject, the medium, and site where things happen and evolve.
-              <br /><br />
-              Kexin’s work is interdisciplinary, research-based, hybrid and participatory. She likes to think beyond the boundaries between art and “non art” spaces, and between categories such as design, theatre, game, clubbing, cooking, fitness and wellness. Kexin combines a variety of media including video, games, printed matter, choreography, music, and food. She aims to provide the audience with playful, collective and on-site experiences which are fun while also shining new perspectives on specific topics of social relevance.
-              <br /><br />
-              郝可欣是一位在北京长大现在生活在荷兰的艺术家和设计师。她于2021年毕业于海牙皇家美术学院平面设计系，2024年在Jan van Eyck学院做驻留艺术家。<br /><br />
-              她艺术创作的核心是通过身体参与来创造多样的体验，以探讨社会历史性和环境议题。在她的实践中，身体不仅是研究的对象，也是媒介，是一切发生和演变的场所。<br /><br />
-              郝可欣的作品纵横着艺术领域之间的边界：平面设计、影像艺术、行为表演和音乐等等。如此的实践，游走于美术馆、教室、音乐节和俱乐部之中，也在挑战着艺术空间和非艺术空间之间的边界。郝可欣善于利用大众形式（如体操、说唱、舞蹈游戏、吃播）构造全新体验。她的作品结合多种媒体，并使用大胆的视觉语言和听觉体验，混合着亲密的个体经历和宏大的集体叙事，用幽默化解历史的沉重。同时，观众通过她的作品能得到充满乐趣和集体氛围感、身临其境的交互式体验。
-              <br /><br />
+        <div class="text-section" id="biography">
 
-            <div class="cutebutton">
-              <a href="other media/CV_KH_250313.pdf">download CV</a>
-              <a href="other media/Kexin-Hao.pdf">download portfolio</a>
-              <a class="cutebutton" href="mailto:kexinhao01111993@gmail.com" target="_blank">Email</a>
-              <a class="cutebutton" href="https://www.instagram.com/kexin_hao/" target="_blank">instagram</a>
-            </div>
-            </p>
+          <div onclick="showEnglish()" class="term">Biography (EN)</div>
+          <p class="english">
+            Kexin Hao (CN, 1993) is a performance artist and graphic designer born in Beijing and based in The Netherlands. What lies at the core of her art making is the creation of experiences addressing history, society and heritage through bodily engagement. The body in her practice is the research subject, the medium, and site where things happen and evolve.
+            <br /><br />
+            Kexin’s work is interdisciplinary, research-based, hybrid and participatory. She likes to think beyond the boundaries between art and “non art” spaces, and between categories such as design, theatre, game, clubbing, cooking, fitness and wellness. Kexin combines a variety of media including video, games, printed matter, choreography, music, and food. She aims to provide the audience with playful, collective and on-site experiences which are fun while also shining new perspectives on specific topics of social relevance.
+          </p>
+          <div onclick="showChinese()" class="term">Biography (CN)</div>
+          <p class="chinese" lang="zh" style="display: none;" >
+            郝可欣是一位在北京长大现在生活在荷兰的艺术家和设计师。她于2021年毕业于海牙皇家美术学院平面设计系，2024年在Jan van Eyck学院做驻留艺术家。<br /><br />
+            她艺术创作的核心是通过身体参与来创造多样的体验，以探讨社会历史性和环境议题。在她的实践中，身体不仅是研究的对象，也是媒介，是一切发生和演变的场所。<br /><br />
+            郝可欣的作品纵横着艺术领域之间的边界：平面设计、影像艺术、行为表演和音乐等等。如此的实践，游走于美术馆、教室、音乐节和俱乐部之中，也在挑战着艺术空间和非艺术空间之间的边界。郝可欣善于利用大众形式（如体操、说唱、舞蹈游戏、吃播）构造全新体验。她的作品结合多种媒体，并使用大胆的视觉语言和听觉体验，混合着亲密的个体经历和宏大的集体叙事，用幽默化解历史的沉重。同时，观众通过她的作品能得到充满乐趣和集体氛围感、身临其境的交互式体验。
+          </p>
 
-            <div class="term">Education</div>
-            <p id="edu">
-               2012 - 2016 <br />
-              B.A Business | B.A German<br />University of International Bussiness and Economics<br /><br />
-               2017 - 2021<br />
-               B.A Graphic Design<br /> Royal Academy of Art, The Hague<br />
-            </p>
+        </div>
 
-            <div class="term">Residencies</div>
-            <p id="residencies">
-               2021.1 ~ 3 <br />
-               Production Residency, iii<br /><br />
-               2022.7 ~ 9 <br/>
-               Summer Residency, V2_Unstable Media<br /><br />
-               2023.6 ~ 10 <br/>
-               WORM x AMARTE residency at WORM<br /><br />
-               2023.10 <br/>
-               Development Week, Tetem<br /><br />
-               2023.11 ~ 2024.10 <br/>
-               Jan Van Eyck Academie
-            </p>
+        <div class="text-section" id="education">
+          <div class="term">Education</div>
+          <div class="roll-typeA">
+            <div class="div1">2017-2021</div>
+            <div class="div2">Royal Academy of Art, The Hague</div>
+            <div class="div3">B.A Graphic Design</div>
+          </div>
+          <div class="roll-typeA">
+            <div class="div1">2012-2016</div>
+            <div class="div2">University of International Bussiness and Economics</div>
+            <div class="div3">B.A Business | B.A German</div>
+          </div>
+        </div>
 
-            <div class="term">Award & Grants</div>
-            <p id="honor">
-                <small id='tags-2-geo'>﹝2021.6﹞</small>Graduacted with Distinction | Graphic Design, KABK<br />
-                <small id='tags-2-geo'>﹝2021.7﹞</small>Department Award | Graphic Design, KABKt<br />
-                <small id='tags-2-geo'>﹝2021.7﹞</small>Nomination | iii Research Residency Award<br />
-                <small id='tags-2-geo'>﹝2021.9﹞</small>Young Blood Award | GOGBOT Festival<br />
-                <small id='tags-2-geo'>﹝2021.10﹞</small>Gold Award, Multidisciplinary Design, Young Blood Award | Lu Junyi Design Live<br />
-                <small id='tags-2-geo'>﹝2025﹞</small>3Package Deal | AFK<br />
-                <small id='tags-2-geo'>﹝2025.2﹞</small>30 Best Dutch Book Designs 2024 | De Best Verzorgde Boeken
-            </p>
 
-            <div class="term">Features</div>
-            <p id="features">
-              <small id='tags-2-geo'>﹝2024﹞</small><a id="special" target="_blank" href="https://fakefestival.org/episodes/43">从广播体操到打糕，当身体成为历史的阅读器</a>, 道听途说<br />
-              <small id='tags-2-geo'>﹝2024﹞</small><a id="special" target="_blank" href="https://metropolism.com/nl/recensie/jan-van-eyck-open-studios-2024/">Jan Van Eyck Open Studios 2024</a>, Metropolis M<br />
-              <small id='tags-2-geo'>﹝2024﹞</small><a id="special" target="_blank" href="https://neural.it/issues/neural-73-negotiating-values/">NEGOTIATING VALUES</a>, NEURAL 73<br />
-              <small id='tags-2-geo'>﹝2023﹞</small><a id="special" target="_blank" href="https://worm.org/2023/09/21/kexin-hao/">interview Kexin Hao: Forceful Catering</a>, WORM x Amarte Residency<br />
-              <small id='tags-2-geo'>﹝2023﹞</small><a id="special" target="_blank" href="https://post.design/heroes-and-villains-performance-art-and-social-stigma/">Heroes and Villains: Performance Art And Social Stigma</a>, Post Design Tangle<br />
-              <small id='tags-2-geo'>﹝2023﹞</small><a id="special" target="_blank" href="https://mp.weixin.qq.com/s/CQq29rYKxojGZGU2e2FwTQ">在荷兰，她带着一群人学做“广播体操”</a>100 个有意思的人（43, 未来预想图<br />
-              <small id='tags-2-geo'>﹝2023﹞</small><a id="special" target="_blank" href="https://neural.it/2023/03/future-dance-of-nostalgia-preserving-history-through-dance/">Future Dance of Nostalgia, preserving history through dance</a>, Neural Magazine<br />
-              <small id='tags-2-geo'>﹝2022﹞</small><a id="special" target="_blank" href="https://studiumgenerale.artez.nl/nl/studies/interview/body+sessions/"> Body Sessions:</a> Visual essay by and interview with Kexin Hao, ArtEZ Studium Generale<br />
-              <small id='tags-2-geo'>﹝2022﹞</small><a id="special" target="_blank" href="https://www.gonzocircus.com/rewire-2022-in-tien-hoogtepunten/">REWIRE 2022 IN TIEN HOOGTEPUNTEN</a>, Gonzo Circus<br />
-              <small id='tags-2-geo'>﹝2021﹞</small><a id="special" href="https://www.instagram.com/p/CdVtRDwILza/" target="_blank">Movement</a>, SPREAD MAG issue 5<br />
-              <small id='tags-2-geo'>﹝2021﹞</small><a id="special" href="https://www.itsnicethat.com/features/the-next-generation-2021-continued-200921" target="_blank">The Next Generation 2021 continued…</a>, It's Nice That<br />
-              <small id='tags-2-geo'>﹝2021﹞</small><a id="special" href="https://www.facebook.com/events/547039346450154/"target="_blank">TodaysArt Visits KABK</a>, TodaysArt, The Hague<br />
-              <small id='tags-2-geo'>﹝2021﹞</small><a id="special" href="https://www.bno.nl/dd-yearbook" target="_blank">Dd Yearbook '21</a>, BNO<br />
-            </p>
+        <div class="text-section" id="residency">
+          <div class="term">Residencies</div>
+          <div class="roll-typeA">
+            <div class="div1">2023.11 ~ 2024.10</div>
+            <div class="div2">Jan Van Eyck Academie</div>
+            <div class="div3">Residency</div>
+          </div>
+          <div class="roll-typeA">
+            <div class="div1">2023.10</div>
+            <div class="div2">Tetem</div>
+            <div class="div3">Development Week</div>
+          </div>
+          <div class="roll-typeA">
+            <div class="div1">2023.6 ~ 10</div>
+            <div class="div2">WORM</div>
+            <div class="div3">WORM x AMARTE residency</div>
+          </div>
+          <div class="roll-typeA">
+            <div class="div1">2022.7 ~ 9</div>
+            <div class="div2">V2_Unstable Media</div>
+            <div class="div3">Summer Residency</div>
+          </div>
+          <div class="roll-typeA">
+            <div class="div1">2021.1 ~ 3</div>
+            <div class="div2">iii (instrument inventors initiative)</div>
+            <div class="div3">Production Residency</div>
+          </div>
+        </div>
+
+
+        <div class="text-section" id="grants">
+          <div class="term">Awards & Grants</div>
+          <div class="roll-typeA">
+            <div class="div1">2025.2</div>
+            <div class="div2">De Best Verzorgde Boeken</div>
+            <div class="div3">30 Best Dutch Book Designs 2024</div>
+          </div>
+          <div class="roll-typeA">
+            <div class="div1">2025</div>
+            <div class="div2">AFK</div>
+            <div class="div3">3Package Deal</div>
+          </div>
+          <div class="roll-typeA">
+            <div class="div1">2021.10</div>
+            <div class="div2">Young Blood Award | Lu Junyi Design Live</div>
+            <div class="div3">Gold Award, Multidisciplinary Design</div>
+          </div>
+          <div class="roll-typeA">
+            <div class="div1">2021.9</div>
+            <div class="div2">GOGBOT Festival</div>
+            <div class="div3">Young Blood Award</div>
+          </div>
+          <div class="roll-typeA">
+            <div class="div1">2021.7</div>
+            <div class="div2">iii Research Residency Award</div>
+            <div class="div3">Nomination</div>
+          </div>
+        </div>
+
+
+        <div class="text-section" id="features">
+          <div class="term">Features</div>
+          <div class="roll-typeA">
+            <div class="div1">2025-03-06 19.909</div>
+            <div class="div2">Den Haag Central</div>
+            <div class="div3">Stadstekenaar Kexin Hao portretteert Haagse Dieren</div>
+          </div>
+          <div class="roll-typeA">
+            <div class="div1">2025-03-06</div>
+            <div class="div2">AD</div>
+            <div class="div3">Den Haag kiest Kexin Hao als nieuwe stadstekenaar</div>
+          </div>
+          <div class="roll-typeA">
+            <div class="div1">2025-03-03</div>
+            <div class="div2">Rijswijks Dagblad</div>
+            <div class="div3">Kexin Hao door gemeente benoemd tot nieuwe Haagse stadstekenaar</div>
+          </div>
+          <div class="roll-typeA">
+            <div class="div1">2024</div>
+            <div class="div2">道听途说</div>
+            <div class="div3"><a lang="zh" target="_blank" href="https://fakefestival.org/episodes/43">从广播体操到打糕，当身体成为历史的阅读器</a></div>
+          </div>
+          <div class="roll-typeA">
+            <div class="div1">2024</div>
+            <div class="div2">Metropolis M</div>
+            <div class="div3"><a target="_blank" href="https://metropolism.com/nl/recensie/jan-van-eyck-open-studios-2024/">Jan Van Eyck Open Studios 2024</a></div>
+          </div>
+          <div class="roll-typeA">
+            <div class="div1">2024</div>
+            <div class="div2">NEURAL 73</div>
+            <div class="div3"><a target="_blank" href="https://neural.it/issues/neural-73-negotiating-values/">NEGOTIATING VALUES</a></div>
+          </div>
+          <div class="roll-typeA">
+            <div class="div1">2023</div>
+            <div class="div2">WORM x Amarte Residency</div>
+            <div class="div3"><a target="_blank" href="https://worm.org/2023/09/21/kexin-hao/">interview Kexin Hao: Forceful Catering</a></div>
+          </div>
+          <div class="roll-typeA">
+            <div class="div1">2023</div>
+            <div class="div2">Post Design Tangle</div>
+            <div class="div3"><a target="_blank" href="https://post.design/heroes-and-villains-performance-art-and-social-stigma/">Heroes and Villains: Performance Art And Social Stigma</a></div>
+          </div>
+          <div class="roll-typeA">
+            <div class="div1">2023</div>
+            <div class="div2">100 个有意思的人（43, 未来预想图</div>
+            <div class="div3"><a lang="zh" target="_blank" href="https://mp.weixin.qq.com/s/CQq29rYKxojGZGU2e2FwTQ">在荷兰，她带着一群人学做“广播体操”</a></div>
+          </div>
+          <div class="roll-typeA">
+            <div class="div1">2023</div>
+            <div class="div2">Neural Magazine</div>
+            <div class="div3"><a target="_blank" href="https://neural.it/2023/03/future-dance-of-nostalgia-preserving-history-through-dance/">Future Dance of Nostalgia, preserving history through dance</a></div>
+          </div>
+          <div class="roll-typeA">
+            <div class="div1">2022</div>
+            <div class="div2">ArtEZ Studium Generale</div>
+            <div class="div3"><a target="_blank" href="https://studiumgenerale.artez.nl/nl/studies/interview/body+sessions/"> Body Sessions:</a></div>
+          </div>
+          <div class="roll-typeA">
+            <div class="div1">2022</div>
+            <div class="div2">Gonzo Circus</div>
+            <div class="div3"><a target="_blank" href="https://www.gonzocircus.com/rewire-2022-in-tien-hoogtepunten/">REWIRE 2022 IN TIEN HOOGTEPUNTEN</a></div>
+          </div>
+          <div class="roll-typeA">
+            <div class="div1">2021</div>
+            <div class="div2">SPREAD MAG issue 5</div>
+            <div class="div3"><a href="https://www.instagram.com/p/CdVtRDwILza/" target="_blank">Movement</a></div>
+          </div>
+          <div class="roll-typeA">
+            <div class="div1">2021</div>
+            <div class="div2">It's Nice That</div>
+            <div class="div3"><a href="https://www.itsnicethat.com/features/the-next-generation-2021-continued-200921" target="_blank">The Next Generation 2021 continued…</a></div>
+          </div>
+          <div class="roll-typeA">
+            <div class="div1">2021</div>
+            <div class="div2">TodaysArt, The Hague</div>
+            <div class="div3"><a href="https://www.facebook.com/events/547039346450154/"target="_blank">TodaysArt Visits KABK</a></div>
+          </div>
+          <div class="roll-typeA">
+            <div class="div1">2021</div>
+            <div class="div2">BNO</div>
+            <div class="div3"><a href="https://www.bno.nl/dd-yearbook" target="_blank">Dd Yearbook '21</a></div>
+          </div>
+        </div>
      </div>
 
 
       <div id="right">
-          <div class="term">Agenda</div>
-           <p id="expo">
-             2024
-             <br />
-             <small id='tags-2-geo'>﹝NL﹞</small><small id='tags'>﹝exhibition﹞﹝performance﹞</small><a id="special" href="https://tetem.nl/event/museumnacht-enschede-4/" target="_blank">Museumnacht Enschede</a>, Tetem<br />
-             <small id='tags-2-geo'>﹝NL﹞</small><small id='tags'>﹝performance﹞</small><a id="special" href="https://www.instagram.com/spreadzinefest/p/DAD_6J3szeE/?img_index=1" target="_blank">SPREAD Zine Fest</a>, SPREAD Zine, Het Resort<br />
-             <small id='tags-2-geo'>﹝NL﹞</small><small id='tags'>﹝performance﹞</small><a id="special" href="https://worm.org/production/free-birthday-party-with-sado-opera-kexin-hao-juliana-x/" target="_blank">Come as you are! FREE CLUB NIGHT, </a>WORM<br />
-             <small id='tags-2-geo'>﹝AUS﹞</small><small id='tags'>﹝performance﹞</small><a id="special" href="https://ars.electronica.art/news/en/" target="_blank">Ars Electronica</a><br />
-             <small id='tags-2-geo'>﹝NL﹞</small><small id='tags'>﹝performance﹞</small><a id="special" href="https://lowlands.nl/" target="_blank">LowLands Festival</a><br />
-             <small id='tags-2-geo'>﹝DK﹞</small><small id='tags'>﹝performance﹞</small><a id="special" href="https://odaysfestival.dk/" target="_blank">O Days Festival</a><br />
-             <small id='tags-2-geo'>﹝NL﹞</small><small id='tags'>﹝performance﹞</small><a id="special" href="https://www.synergyartfestival.nl/project/kexin-hao-10-r3n" target="_blank">Synergy Art Festival</a><br />
-             <small id='tags-2-geo'>﹝NL﹞</small><small id='tags'>﹝exhibition﹞﹝performance﹞</small><a id="special" href="https://www.janvaneyck.nl/calendar/open-studios-2024" target="_blank">Open Studios</a>, Jan van Eyck Academie<br />
-             <small id='tags-2-geo'>﹝NL﹞</small><small id='tags'>﹝performance﹞</small><a id="special" href="https://museumnachtmaastricht.nl/" target="_blank">Museum Night Maastricht</a>, Jan van Eyck Academie<br />
-             <small id='tags-2-geo'>﹝NL﹞</small><small id='tags'>﹝performance﹞</small><a id="special" href="https://www.instagram.com/amartefonds/p/C5DpcjkoTW7/?img_index=7" target="_blank">Amarte Wonderland</a>, Theater De Krakeling Amsterdam<br />
-             <small id='tags-2-geo'>﹝NL﹞</small><small id='tags'>﹝artist talk﹞</small><a id="special" href="https://www.stroom.nl/activiteiten/lezing_symposium.php?l_id=1330922" target="_blank">Zefir7: Kexin Hao and Marthe Prins</a>, Stroom Den Haag<br />
-             <small id='tags-2-geo'>﹝NL﹞</small><small id='tags'>﹝performance﹞</small><a id="special" href="https://instrumentinventors.org/agenda/on-point-of-climax/" target="_blank">On Point Of Climax</a>, iii<br />
-             <small id='tags-2-geo'>﹝NL﹞</small><small id='tags'>﹝performance﹞</small><a id="special" href="https://nieuweinstituut.nl/events/women-gather" target="_blank">The Women Gather</a>, Het Nieuwe Instituut<br />
-              <br />
-             2023
-              <br />
-              <small id='tags-2-geo'>﹝NL﹞</small><small id='tags'>﹝performance﹞</small><a id="special" href="https://ra.co/events/1819586" target="_blank">FeverTraumburg</a>, Poing Clubnight<br />
-              <small id='tags-2-geo'>﹝NL﹞</small><small id='tags'>﹝performance﹞</small><a id="special" href="https://www.moonshotdigitalecultuur.nl/events/moonshot-hni-dec-2023" target="_blank">MOONSHOT: Digital Culture</a>, conference at Het Nieuwe Instituut<br />
-              <small id='tags-2-geo'>﹝NL﹞</small><small id='tags'>﹝performance﹞</small><a id="special" href="https://www.franshalsmuseum.nl/nl/fotoverslag-opening-koortsdroom/" target="_blank">KOORTSDROOM / Feverdream</a>, Frans Hals Museum<br />
-              <small id='tags-2-geo'>﹝NL﹞</small><small id='tags'>﹝art fair﹞﹝performance﹞</small><a id="special" href="https://unfair.nl/kexin-hao/" target="_blank">UNFAIR 2023</a><br />
-              <small id='tags-2-geo'>﹝NL﹞</small><small id='tags'>﹝exhibition﹞﹝performance﹞</small><a id="special" href="https://www.worlddesignembassies.com/topics/embassy-of-inclusive-society-op-ddw23/" target="_blank">Embassy of Inclusive Society</a>, Dutch Design Week 2023, Van Abbemuseum<br />
-              <small id='tags-2-geo'>﹝NL﹞</small><small id='tags'>﹝performance﹞</small><a id="special" href="https://worm.org/2023/11/14/worm-x-amarte-lookback-affect/" target="_blank">AFFECT</a>, final presentation WORM x Amarte Residency, WORM<br />
-              <small id='tags-2-geo'>﹝NL﹞</small><small id='tags'>﹝performance﹞</small><a id="special" href="https://hethuisutrecht.nl/Nieuws/122/line-up-club-huis-witcheswanted" target="_blank">#WITCHESWANTED</a>, Clubhuis, Het Huis Utrecht<br />
-              <small id='tags-2-geo'>﹝DE﹞</small><small id='tags'>﹝performance﹞</small><a id="special" href="https://lostweekend.de/art/" target="_blank">Lost Weekend Meets Young Art</a><br />
-              <small id='tags-2-geo'>﹝NL﹞</small><small id='tags'>﹝performance﹞</small><a id="special" href="https://www.stichtingsynergy.com/artists/kexin-hao" target="_blank">Synergy Festival</a><br />
-              <small id='tags-2-geo'>﹝NL﹞</small><small id='tags'>﹝performance﹞</small><a id="special" href="https://instrumentinventors.org/post/evidence-in-motion-5-photos/" target="_blank">Evidence in Motion #5: Empty Orchestra</a>, iii<br />
-              <small id='tags-2-geo'>﹝NL﹞</small><small id='tags'>﹝performance﹞</small><a id="special" href="https://instrumentinventors.org/agenda/inter-broedplaats-olympics/" target="_blank">Inter-broedplaats Olympics</a><br />
-              <small id='tags-2-geo'>﹝NL﹞</small><small id='tags'>﹝performance﹞</small><a id="special" href="https://www.fiberfestival.nl/kexin" target="_blank">FIBER Festival</a><br />
-              <small id='tags-2-geo'>﹝NL﹞</small><small id='tags'>﹝artist talk﹞</small><a id="special" href="https://www.fiberfestival.nl/kexin" target="_blank">Audiovisual Art Assembly</a>, FIBER Festival<br />
-              <small id='tags-2-geo'>﹝DK﹞</small><small id='tags'>﹝artist talk﹞﹝performance﹞</small><a id="special" href="https://post.design/community/" target="_blank">Post Design Tangle: Community</a>, Post Design Festival<br />
-              <small id='tags-2-geo'>﹝NL﹞</small><small id='tags'>﹝performance﹞</small><a id="special" href="https://wobby.club/news-archive/wobbyclubnight7april" target="_blank">Wobby Club Night</a><br />
-              <small id='tags-2-geo'>﹝NL﹞</small><small id='tags'>﹝artist talk﹞</small>guest teaching at KABK graphic design<br />
-              <small id='tags-2-geo'>﹝NL﹞</small><small id='tags'>﹝exhibition﹞</small><a id="special" href="https://boringfestival.nl/acts/kexin-hao-2" target="_blank">Sugar Pop Institute presents: Future Dance of Nostalgia</a>, Boring Festival<br />
-              <br />
-              2022
-              <br />
-              <small id='tags-2-geo'>﹝CR﹞</small><small id='tags'>﹝exhibition﹞</small><a id="special" href="https://studentfilmfestival.eu/stiff-2022/program/" target="_blank">ALL GAME NO PLAY</a>, STIFF Festival<br />
-              <small id='tags-2-geo'>﹝NL﹞</small><small id='tags'>﹝exhibition﹞﹝performance﹞</small><a id="special" href="https://w139.nl/en/turning-towards-fluidity-public-program-en-delete/" target="_blank">Turning Towards Fluidity: A Tournament of the Unknown</a>, W139 <br />
-              <small id='tags-2-geo'>﹝NL﹞</small><small id='tags'>﹝performance﹞</small><a id="special" href="https://ddw.nl/en/programme/7173/design-bond-china-calling-conference-at-ddw" target="_blank">Design Bond 纽带 | China Calling 2022</a>, Dutch Design Week <br />
-              <small id='tags-2-geo'>﹝NL﹞</small><small id='tags'>﹝exhibition﹞﹝performance﹞</small>Stimuleringsfonds 10 year anniversary<br />
-              <small id='tags-2-geo'>﹝ES﹞</small><small id='tags'>﹝exhibition﹞</small><a id="special" href="https://levfestival.com/22/" target="_blank">L.E.V Festival</a>, MATADERO<br />
-              <small id='tags-2-geo'>﹝NL﹞</small><small id="tags">﹝exhibition﹞﹝performance﹞</small><a id="special" target="_blank" href="https://v2.nl/events/summer-sessions-test_lab-2022">Test_Lab</a>, final presentation Summer Session Residency 2022 at V2<br />
-              <small id='tags-2-geo'>﹝CN﹞</small><small id="tags">﹝artist talk﹞</small><a id="special" href="">身体力行的宣传委员</a>，陆俊毅design live, online<br />
-              <small id='tags-2-geo'>﹝DE﹞</small><small id="tags">﹝artist talk﹞﹝performance﹞</small><a d="special" target="_blank" id="special" href="https://never-ready.hfbk.net/speakers/kexin-hao">Never Ready </a>– A Congress on the Visuality of the Internet. University of Fine Arts Hamburg<br />
-              <small id='tags-2-geo'>﹝NL﹞</small><small id="tags">﹝solo exhibition﹞﹝performance﹞</small><a id="special">Body Matters</a>, CHAXART<br />
-              <small id='tags-2-geo'>﹝NL﹞</small><small id="tags">﹝exhibition﹞﹝performance﹞</small><a id="special" href="https://2022.tecart.nl/kexin-hao/" target="_blank">TecArt</a>, PLANET ART<br />
-              <small id='tags-2-geo'>﹝NL﹞</small><small id="tags">﹝exhibition﹞﹝performance﹞</small><a id="special" href="https://www.rewirefestival.nl/artist/kexin-hao" target="_blank">Rewire Festival: Proximity Music, Sensing After Thought. </a>Amare<br />
-              <small id='tags-2-geo'>﹝NL﹞</small><small id="tags">﹝exhibition﹞﹝performance﹞</small><a id="special" href="https://w139.nl/en/" target="_blank">2 Body Practice</a>, W139<br />
-              <small id='tags-2-geo'>﹝NL﹞</small><small id="tags">﹝performance﹞</small><a id="special">Midnight Wellness Retreat</a>, Performance Bar Rotterdam<br />
-              <small id='tags-2-geo'>﹝NL﹞</small><small id="tags">﹝exhibition﹞﹝performance﹞</small><a id="special" href="https://www.instagram.com/p/CZ18p98KANE/" target="_blank">Have A Seat! Moving away from consuming tales Participatory presentation</a>, MAMA Rotterdam<br />
-              <small id='tags-2-geo'>﹝NL﹞</small><small id="tags">﹝workshop﹞</small><a id="special" href="https://www.facebook.com/events/977796256491192" target="_blank">Typographic Night</a> at Page Not Found<br />
-              <small id='tags-2-geo'>﹝CN﹞</small><small id="tags">﹝artist talk﹞</small><a id="special" href="https://www.instagram.com/zuibishe_com/" target="_blank">用“身体”和“情境”贯穿的作品集</a>, 最毕设 线上直播分享会
-              <br /><br />
-              2021
-              <br />
-              <small id='tags-2-geo'>﹝CN﹞</small><small id="tags">﹝exhibition﹞﹝performance﹞</small><a id="special" href="http://www.a4am.cn/" target="_blank">yà运会</a>, 麓湖·A4美术馆 Luxelakes·A4 Art Museum<br />
-              <small id='tags-2-geo'>﹝NL﹞</small><small id="tags">﹝workshop﹞</small><a id="special" href="https://www.extraintra.nl/" target="_blank">Recipes for A Technological Undoing</a>, Extra-Curricular program Gerrit Rietveld Academie & Sandberg Instituut<br />
-              <small id='tags-2-geo'>﹝CR﹞</small><small id="tags">﹝screening﹞</small><a id="special" href="https://www.facebook.com/stiff.rijeka/photos/a.4408102342624683/4408028809298703" target="_blank">STIFF Student International Film Festival</a><br />
-              <small id='tags-2-geo'>﹝NL﹞</small><small id="tags">﹝workshop﹞</small><a id="special" href="https://www.artez.nl/en/research/honours-lab#faq-Tracks-Embodied%20lives%2C%20embodied%20tales" target="_blank">Embodied lives, Embodied tales</a>, Honors Program at Artez Arnhem<br />
-              <small id='tags-2-geo'>﹝NL﹞</small><small id="tags">﹝artist talk﹞</small><a id="special" href="https://bartalkdh.wordpress.com/bartalk25-control-physical-event/" target="_blank">BARTALK#25: Control</a><br />
-              <small id='tags-2-geo'>﹝NL﹞</small><small id="tags">﹝exhibition﹞﹝performance﹞</small><a id="special" href="https://2021.gogbot.nl/" target="_blank">GOGBOT Festival</a><br />
-              <small id='tags-2-geo'>﹝NL﹞</small><small id="tags">﹝exhibition﹞﹝performance﹞</small><a id="special" href="https://pipdenhaag.nl/events/pip-expo/" target="_blank">PIP Expo</a><br />
-              <small id='tags-2-geo'>﹝NL﹞</small><small id="tags">﹝screening﹞</small><a id="special" href="https://www.nnnfair.com/fair/nnn-21/" target="_blank">Non Native Native Fair</a>, Worm<br />
-              <small id='tags-2-geo'>﹝PL﹞</small><small id="tags">﹝artist talk﹞</small><a id="special" href="https://www.instagram.com/p/CRmUWXjHTmt/"target="_blank">Discussion and exercises in cultivation</a>, Stroboskop<br />
-              <small id='tags-2-geo'>﹝PL﹞</small><small id="tags">﹝screening﹞</small><a id="special" href="https://stroboskop-space.pl/Body-Building" target="_blank">Body Building: </a>On the Formation of the Individual, Political, and Empowered Self, Stroboskop
-              <br /><br />
-              2020
-              <br />
-              <small id='tags-2-geo'>﹝DE﹞</small><small id="tags">﹝artist talk﹞</small><a id="special" href="https://youtu.be/c5Fo5sccDwk" target="_blank">Katakombe, event#2, </a>Städelschule Architecture Class<br />
-              <small id='tags-2-geo'>﹝NL﹞</small><small id="tags">﹝hybrid event﹞</small><a id="special"href="https://www.facebook.com/events/1764133603724540"target="_blank">MOONMOON Trip</a>, WORM Pirate Bay<br />
-              <small id='tags-2-geo'>﹝NL﹞</small><small id="tags">﹝hybrid event﹞</small><a id="special"href="https://www.facebook.com/events/682940902262095/"target="_blank">"What Do We Talk About When We Don't Talk About Food..." </a>Verhalenhuis<br />
-              <small id='tags-2-geo'>﹝NL﹞</small><small id="tags">﹝performance﹞</small><a id="special"href="https://www.facebook.com/events/214517893069089" target="_blank">Live in between vol. 2: Trans-dialogue</a>, CinemAsia<br />
-              <small id='tags-2-geo'>﹝NL﹞</small><small id="tags">﹝hybrid event﹞</small><a id="special"href="https://www.facebook.com/events/2304072683229678/" target="_blank">Trance Zine Pavilion Launch</a>, Gerrit Rietveld Academy<br />
-              <small id='tags-2-geo'>﹝NL﹞</small><small id="tags">﹝exhibition﹞</small><a id="special"href="https://www.facebook.com/events/864188610706502"target="_blank">Moonmoon Calendar X Taoist Meditation Trip</a>, Space 101<br />
-              <!-- <small id='tags-2-geo'>﹝NL﹞</small><small id="tags">﹝hybrid event﹞</small><a id="special"href="https://www.facebook.com/events/2560251807548520/" target="_blank">Alternative Chinese New Year 2020 (NL)</a> -->
-              <!-- 2018
-              <br />
-              <small id='tags-2-geo'>﹝NL﹞</small><small id="tags">﹝screening﹞</small><a id="special"href="https://www.facebook.com/events/2116507365235824"target="_blank">DaBang Concert | Mukbang Screening</a>, Cinetol (NL)<br /> -->
-           </p>
-           <div class="term">Clients & Collaboration</div>
-            <p id="clients">
-              2024<br />
-              <small id="tags">﹝event identity and intervention﹞</small><a id="special" href="project/not-rocket-science.html">Symposium: Not Rocket Science</a>, Stroom Den Haag<br />
-              <br />
-              2023<br />
-              <small id="tags">﹝festival identity﹞</small><a id="special" href="project/kabk-campaign.html">KABK Graduation Show 2023 and Open Day Campaign Design</a>, commissioned by Royal Academy of Art, The Hague<br />
-              <small id="tags">﹝publication design﹞</small><a id="special" href="https://www.chinees-indisch-restaurant-stickeralbum.nl/" target="_blank">Chinees-Indisch Restaurant Sticker Album</a>, publication for Benjamin Li<br />
-              <br />
-              2022<br />
-              <small id="tags">﹝exhibition identity﹞</small><a id="special" href="https://www.instagram.com/alternativeartguide/" target="_blank">Back To Normal</a>, group exhibition initiated by Alternative Art Guide<br />
-              <small id="tags">﹝exhibition identity﹞﹝website﹞</small><a href="https://cockroach-collective.com/" target="_blank">Cockroach Collective</a>, 3rd year photography collective and exhibition
-              <br /><br />
-              2021<br />
-              <small id="tags">﹝publication design﹞</small><span id="special">Symposium 2019 + 2020</span>, Musuem2050
-              <br />
-              <small id="tags">﹝exhibition identity﹞</small><a id="special" href="project/movespectrum.html">MOVE! by Spectrum.space</a>, The Spectrum
-              <br />
-              <!-- <small id="tags">﹝book design﹞﹝website﹞</small>Art book Chinese typography, <span id="special">Het Spaarzame Schilderen</span>, Robbin Hyker -->
-              <small id="tags">﹝publication design﹞</small><a id="special" href="project/fake-china.html">FAKE CHINA 假中国</a>, Isabel Pontoppidan, Gerrit Rietveld Academy
-              <br />
-              <small id="tags">﹝website﹞</small><a href="http://www.hgtomirosa.com/" target="_blank"><span id="special">Hgtomi Rosa</span>, Hgtomi Rosa, Stroom Den Haag</a>
-              <br />
-              <small id="tags">﹝package design﹞</small>  <a href="project/puzzle-box.html"><span id="special">Nr.39 met Rijst</span>, Benjamin Li, MAMA Rottedam, LAM Museum</a>
-              <br /><br />
-              2020<br />
-              <!-- WeChat graphic design, <span id="special">HYUNDAI Art+Tech</span>, YUZ Musuem Shanghai<br /> -->
-              <small id="tags">﹝exhibition identity﹞</small><a href="project/moonmoon.html"><span id="special">MOONMOON Trip</span>, Honey Kraiwee, UBIK, Worm Pirate Bay</a>
-              <br />
-              <small id="tags">﹝exhibition identity﹞</small><a href="project/w139.html"> <span id="special">It is very difficult to be an island of perfection in a sea of misery, but please do not doubt our sincerity</span>, Simon Wald-Lasowski, W139</a>
-              <br />
-              <small id="tags">﹝exhibition identity﹞</small><a href="project/b-for-bisexuality.html"><span id="special">B for Bisexuality</span>, Daphne Oude Geerdink, JIP Haaglanden</a>
-              <br /><br />
-              <!-- On-going<br />
-              graphic designer <a href="http://trancezine.com/" target="_blank">Trance Zine</a><br />
-              graphic designer <a href="https://beuysbois.nl/"target="_blank">beuysbois</a><br />
-              web designer <a href="http://dharmainitiatives.net/"target="_blank">Dharma Initiatives</a><br /> -->
-           </p>
+
+           <div class="text-section" id="contact">
+             <div class="term" id="contact">Contact & Download</div>
+             <div class="roll-typeC">
+               <div class="div1"><a target="_blank" href="mailto:kexinhao01111993@gmail.com">Email</a></div>
+               <div class="div2"><a target="_blank" href="https://www.instagram.com/kexin_hao/">Instagram</a></div>
+               <div class="div3"><a href="other media/CV_KH_250313.pdf">CV</a></div>
+               <div class="div4"><a href="other media/Kexin-Hao.pdf">portfolio</a></div>
+             </div>
+           </div>
+
+           <div class="text-section" id="clients">
+             <div class="term" id="clients">Clients & Collaboration</div>
+             <div class="roll-typeB">
+               <div class="div1">2025</div>
+               <div class="div2">Gemeente Den Haag, NEST</div>
+               <div class="div3">drawing</div>
+               <div class="div4"><a href="project/stadstekenaar-2025.html">Stadstekenaar 2025</a></div>
+             </div>
+             <div class="roll-typeB">
+               <div class="div1">2025</div>
+               <div class="div2">Merz Academy Stuttgart</div>
+               <div class="div3">guest teaching</div>
+               <div class="div4">Workshop Week</div>
+             </div>
+             <div class="roll-typeB">
+               <div class="div1">2025</div>
+               <div class="div2">iii (instrument inventors initiative)</div>
+               <div class="div3">event identity and intervention</div>
+               <div class="div4"><a href="project/spill-your-guts.html">Spill Your Guts</a></div>
+             </div>
+             <div class="roll-typeB">
+               <div class="div1">2024</div>
+               <div class="div2">PrintRoom Rotterdam</div>
+               <div class="div3">publication</div>
+               <div class="div4"><a href="https://printroom.org/2025/01/20/saturday-01-february-2025-launch-of-leesmap-2/" target="_blank">Leesmap #2</a></div>
+             </div>
+             <div class="roll-typeB">
+               <div class="div1">2024</div>
+               <div class="div2">Stroom Den Haag</div>
+               <div class="div3">event identity and intervention</div>
+               <div class="div4"><a href="project/not-rocket-science.html">Symposium: Not Rocket Science</a></div>
+             </div>
+             <div class="roll-typeB">
+               <div class="div1">2023</div>
+               <div class="div2">Royal Academy of Art, The Hague</div>
+               <div class="div3">festival identity</div>
+               <div class="div4"><a href="project/kabk-campaign.html">KABK Graduation Show 2023 and Open Day Campaign Design</a></div>
+             </div>
+             <div class="roll-typeB">
+               <div class="div1">2023</div>
+               <div class="div2">Benjamin Li</div>
+               <div class="div3">publication design</div>
+               <div class="div4"><a href="https://www.chinees-indisch-restaurant-stickeralbum.nl/" target="_blank">Chinees-Indisch Restaurant Sticker Album</a></div>
+             </div>
+             <div class="roll-typeB">
+               <div class="div1">2022</div>
+               <div class="div2">Alternative Art Guide</div>
+               <div class="div3">publication design</div>
+               <div class="div4"><a href="https://www.instagram.com/alternativeartguide/" target="_blank">Back To Normal</a></div>
+             </div>
+             <div class="roll-typeB">
+               <div class="div1">2022</div>
+               <div class="div2">KABK Photography Department</div>
+               <div class="div3">exhibition identity, website</div>
+               <div class="div4"><a href="https://cockroach-collective.com/" target="_blank">Cockroach Collective</a></div>
+             </div>
+             <div class="roll-typeB">
+               <div class="div1">2021</div>
+               <div class="div2">Museum2050</div>
+               <div class="div3">publication design</div>
+               <div class="div4">Symposium 2019 + 2020</div>
+             </div>
+             <div class="roll-typeB">
+               <div class="div1">2021</div>
+               <div class="div2">The Spectrum</div>
+               <div class="div3">exhibition identity</div>
+               <div class="div4">MOVE! by Spectrum.space</div>
+             </div>
+             <div class="roll-typeB">
+               <div class="div1">2021</div>
+               <div class="div2">Isabel Pontoppidan</div>
+               <div class="div3">publication design</div>
+               <div class="div4"><a href="project/fake-china.html">Fake Chinese 假中国</a></div>
+             </div>
+             <div class="roll-typeB">
+               <div class="div1">2021</div>
+               <div class="div2">Hgtomi Rosa</div>
+               <div class="div3">website design</div>
+               <div class="div4"><a href="http://www.hgtomirosa.com/" target="_blank">Hgtomi Rosa</a></div>
+             </div>
+             <div class="roll-typeB">
+               <div class="div1">2021</div>
+               <div class="div2">Benjamin Li</div>
+               <div class="div3">package design</div>
+               <div class="div4"><a href="project/puzzle-box.html">Nr.39 met Rijst</a></div>
+             </div>
+             <div class="roll-typeB">
+               <div class="div1">2020</div>
+               <div class="div2">Honey Kraiwee</div>
+               <div class="div3">exhibition identity</div>
+               <div class="div4">MOONMOON Trip</div>
+             </div>
+             <div class="roll-typeB">
+               <div class="div1">2020</div>
+               <div class="div2">Simon Wald-Lasowski, W139</div>
+               <div class="div3">exhibition identity</div>
+               <div class="div4"><a href="project/w139.html">It is very difficult to be an island of perfection in a sea of misery, but please do not doubt our sincerity</a></div>
+             </div>
+             <div class="roll-typeB">
+               <div class="div1">2020</div>
+               <div class="div2">Daphne Oude Geerdink, JIP Haaglanden</div>
+               <div class="div3">exhibition identity</div>
+               <div class="div4">B for Bisexuality</div>
+             </div>
+           </div>
+
       </div>
 
 

@@ -1,17 +1,26 @@
 @font-face {
+  font-family: "HN-Futura-Duplex-Regular";
+  src: url("../font/hershey-noailles/Hershey-Noailles-Futura-Duplex-Regular.woff") format('woff');
+}
+
+@font-face {
+  font-family: "HN-Futura-Simplex-Bold";
+  src: url("../font/hershey-noailles/Hershey-Noailles-Futura-Simplex-Bold.woff") format('woff');
+}
+
+@font-face {
   font-family: "CMU classic serif";
-  src: url("font/cmunci.woff") format('woff');
+  src: url("../font/cmunci.woff") format('woff');
 }
 
 @font-face {
     font-family: "Apercu-mono";
-    src: url("font/Apercu/Apercu Mono.otf") format("opentype");
+    src: url("../font/Apercu/Apercu Mono.otf") format("opentype");
 }
 
 @font-face {
     font-family: "Apercu";
-    font-weight: bold;
-    src: url("font/Apercu/Apercu Regular.otf") format("opentype");
+    src: url("../font/Apercu/Apercu Regular.otf") format("opentype");
 }
 
 *{
@@ -19,6 +28,7 @@
     margin: 0;
 }
 body {
+  font-family: 'HN-Futura-Duplex-Regular';
   background-color: rgb(236, 238, 211);
 }
 
@@ -34,26 +44,23 @@ a:hover {
 
 .bottombar {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 .bottombar>a {
   /* margin-bottom: -2vh; */
   color:white;
-  font-family: 'CMU classic serif';
   text-shadow: 0.5px 0.5px 0.5px grey;
   font-size: 1.5rem;
   text-align: center;
-  box-shadow:inset 0px 0px 2vh 0.3vh #607596;
-	background:linear-gradient(to bottom, #ffdede 8%, #5344ff 80%);
-	background-color:#faf4be;
-	border-radius:50vh;
+  background-color:#c9c9c9;
+  border:3px solid #ffffff;
+  border-style: outset;
 	display:inline-block;
-	padding:1.2vh 1.2vh;
+	/* padding:1.2vh 1.2vh; */
 	text-decoration:none;
 }
 .bottombar>a:hover {
-  background:linear-gradient(to bottom, #7ee6e6 5%, #fabefa 100%);
-  background-color:#7ee6e6;
+  border-style:inset;
 }
 
 
@@ -126,7 +133,6 @@ a:hover {
 .left-column{
   order:1;
   width:20%;
-  font-family: 'Apercu';
   font-size: 2rem;
   margin-top:1rem;
   margin-left:1rem;
@@ -156,7 +162,6 @@ p {
 }
 
 .title{
-  font-family: 'Apercu';
   font-size: 1.5rem;
 }
 
@@ -219,7 +224,6 @@ p {
   .topblock > div{
     padding:2vh;
     border-right:dotted 2px;
-    font-family: 'Apercu-mono';
     font-size: 0.7rem;
     border-bottom: dotted 2px;
   }
@@ -236,7 +240,6 @@ p {
   }
 
   .btn{
-    font-family: 'Apercu-mono';
     font-size: 0.7rem;
   }
 
@@ -274,7 +277,6 @@ p {
   }
 
   .title{
-    font-family: 'Apercu';
     font-size: 1rem;
   }
 

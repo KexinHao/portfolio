@@ -5,25 +5,13 @@
 
 @font-face {
   font-family: "CMU classic serif";
-  src: url("font/cmunci.woff") format('woff');
+  src: url("../font/cmunci.woff") format('woff');
 }
 
 body{
-    /* font-family: helvetica, sans-serif;
-    font-size: var(--font-size-m);
-    line-height: var(--line-height); */
     overflow-x: hidden;
 }
 
-/* a:link, a:visited, a:hover, a:active{
-  text-decoration: none;
-  color:black;
-}
-a:hover{
-  background-color: black;
-  color: white;
-  cursor: pointer;
-} */
 
 
 .term{
@@ -49,7 +37,7 @@ a:hover{
 
 .bottombar {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 .bottombar>a {
   /* margin-bottom: -2vh; */
