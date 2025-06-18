@@ -117,6 +117,8 @@ p > a:link, a:visited, a:hover, a:active{
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
+  height: 100vh;
+  overflow-y: scroll;
 }
 .imagebox-collage > div{
   width: 25%;
@@ -219,6 +221,7 @@ grid-template-rows: auto, auto;
   }
   .imagebox-collage {
     flex-direction: column;
+    height: auto;
   }
   .imagebox-collage > div{
     width: 100%;
