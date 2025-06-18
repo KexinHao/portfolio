@@ -101,7 +101,7 @@ p > a:link, a:visited, a:hover, a:active{
 
 .imagebox{
   order: 1;
-  width: 67%;
+  width: 60%;
   height: 100vh;
   overflow-x:hidden;
   overflow-y: scroll;
@@ -133,7 +133,7 @@ figcaption{
 
 .text {
   order: 2;
-  width: 33%;
+  width: 40%;
   height: 100vh;
   overflow-x:hidden;
   overflow-y: scroll;
@@ -188,6 +188,17 @@ grid-template-rows: repeat(2, 1fr);
 .text > .text-section > .row-typeC > .div1 { grid-area: 1 / 1 / 2 / 2; font-size: 1rem; align-self: end;}
 .text > .text-section > .row-typeC > .div2 { grid-area: 1 / 2 / 2 / 4; font-size: 1rem; align-self: end;}
 .text > .text-section > .row-typeC > .div3 { grid-area: 2 / 2 / 3 / 4; }
+
+.text-section > .roll-typeD {
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+grid-template-rows: auto, auto;
+}
+.roll-typeD > .div1 { grid-area: 1 / 1 / 2 / 2; font-size: 0.9rem; align-self: end;}
+.roll-typeD > .div2 { grid-area: 1 / 2 / 2 / 3; font-size: 0.9rem; align-self: end;}
+.roll-typeD > .div3 { grid-area: 1 / 3 / 2 / 4; font-size: 0.9rem; align-self: end;}
+.roll-typeD > .div4 { grid-area: 1 / 4 / 2 / 5; font-size: 0.9rem; align-self: end;}
+.roll-typeD > .div5 { grid-area: 2 / 2 / 3 / 5; }
 
 @media only screen and (max-width: 800px) {
   body{
