@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+  <channel>
+    <title>What's on? Kexin's news and agenda</title>
+    <link>https://howkexin.com/agenda.html</link>
+    <description>Updates on my artworks and events</description>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 17 Jun 2025 12:00:00 +0000</lastBuildDate>
+
+    <item>
+      <title>I will perform at the opening of Wasteland Festival</title>
+      <link>https://howkexin.com/agenda.html</link>
+      <pubDate>Wed, 17 Jun 2025 09:00:00 +0000</pubDate>
+      <description>On July 3rd at Het Niewe Institute, I will bring out the ASMR show and hysteric singing from the work "Lewd Banquet" for the opening of Wasteland. </description>
+    </item>
+
+    <!-- Add more <item> entries as you go -->
+  </channel>
+</rss>
