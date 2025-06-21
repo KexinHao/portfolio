@@ -55,6 +55,9 @@ p > a:link, a:visited, a:hover, a:active{
   color:black;
   font-family: "HN-Times-Dublex-Italic-Light";
 }
+#italic-in-block{
+  font-family: "HN-Times-Dublex-Italic-Light";
+}
 
 
 ::-webkit-scrollbar {
