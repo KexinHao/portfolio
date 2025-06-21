@@ -1,7 +1,16 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+@font-face {
+  font-family: "HN-Futura-Duplex-Regular";
+  src: url("../font/hershey-noailles/Hershey-Noailles-Futura-Duplex-Regular.woff") format('woff');
+}
+
+@font-face {
+  font-family: "HN-Futura-Simplex-Bold";
+  src: url("../font/hershey-noailles/Hershey-Noailles-Futura-Simplex-Bold.woff") format('woff');
+}
+
+@font-face {
+  font-family: "HN-Times-Dublex-Italic-Light";
+  src: url("../font/hershey-noailles/Hershey-Noailles-Times-Duplex-Italic-Light.woff") format('woff');
 }
 
 @font-face {
@@ -19,18 +28,49 @@
     src: url("../font/Apercu/Apercu Regular.otf") format("opentype");
 }
 
-body{
-  font-family: 'Apercu';
-  background-color: rgb(236, 238, 211);
+*{
+    padding: 0;
+    margin: 0;
 }
 
-a:link, a:visited{
+body{
+  font-family: 'HN-Futura-Duplex-Regular';
+  font-size: 1.5rem;
+  background-color: rgb(236, 238, 211);
+}
+:lang(zh) {
+  font-size: 1.3rem;
+}
+
+hr.divider-solid{
+  border-top: 1.5px solid black;
+}
+a:link {
   text-decoration: none;
   color:black;
 }
-a:hover, a:active{
-  /* color:white;
-  background-color: black; */
+p > a:link, a:visited, a:hover, a:active{
+  text-decoration: underline;
+  color:black;
+  font-family: "HN-Times-Dublex-Italic-Light";
+}
+
+
+::-webkit-scrollbar {
+    width: 2rem;
+}
+
+::-webkit-scrollbar-track {
+}
+
+::-webkit-scrollbar-thumb {
+  margin-bottom: 5vh;
+  background-color:#c9c9c9;
+  border:3px solid #ffffff;
+  border-style: outset;
+  display:inline-block;
+  padding:1.2vh 1.2vh;
+  text-decoration:none;
 }
 
 .bottombar {
@@ -40,25 +80,18 @@ a:hover, a:active{
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 .bottombar>a {
-  /* margin-bottom: -2vh; */
   color:white;
-  font-family: 'CMU classic serif';
   text-shadow: 0.5px 0.5px 0.5px grey;
-  font-size: 1.5rem;
   text-align: center;
-  box-shadow:inset 0px 0px 2vh 0.3vh #607596;
-	background:linear-gradient(to bottom, #ffdede 8%, #5344ff 80%);
-	background-color:#faf4be;
-	border-radius:50vh;
+  background-color:#c9c9c9;
+  border:3px solid #ffffff;
+  border-style: outset;
 	display:inline-block;
-	padding:1.2vh 1.2vh;
 	text-decoration:none;
 }
 .bottombar>a:hover {
-  background:linear-gradient(to bottom, #7ee6e6 5%, #fabefa 100%);
-  background-color:#7ee6e6;
+  border-style:inset;
 }
-
 
 
 .general-text{
@@ -101,8 +134,7 @@ a:hover, a:active{
   padding-left:0.5rem;
 }
 #italic-in-block{
-  font-family: 'CMU classic serif', serif;
-  font-style: italic;
+  font-family: "HN-Times-Dublex-Italic-Light";
 }
 
 
