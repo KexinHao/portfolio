@@ -76,17 +76,19 @@ p > a:link, a:visited, a:hover, a:active{
 .bottombar {
   order: 1;
   width:100%;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  display: flex;
+  flex-direction: row;
 }
+
 .bottombar>a {
+  flex-grow: 1;
   color:white;
   text-shadow: 0.5px 0.5px 0.5px grey;
   text-align: center;
   background-color:#c9c9c9;
   border:3px solid #ffffff;
   border-style: outset;
-	display:inline-block;
+	/* display:inline-block; */
 	text-decoration:none;
 }
 .bottombar>a:hover {
