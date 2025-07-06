@@ -55,6 +55,10 @@ p > a:link, a:visited, a:hover, a:active{
   color:black;
   font-family: "HN-Times-Dublex-Italic-Light";
 }
+input, button {
+  font-size: 1.5rem;
+  font-family: 'HN-Futura-Duplex-Regular';
+}
 
 
 ::-webkit-scrollbar {
@@ -128,6 +132,12 @@ p > a:link, a:visited, a:hover, a:active{
   margin-bottom: 0.3rem;
   border: 3px;
   border-style: none none ridge none;
+}
+
+.sub-term{
+  text-align: center;
+  padding-bottom: 0.3rem;
+  margin-bottom: 0.3rem;
 }
 
 .text-section{
@@ -224,12 +234,13 @@ p > a:link, a:visited, a:hover, a:active{
 .text-section > .roll-typeC {
 display: grid;
 grid-template-columns: repeat(2, 1fr);
-grid-template-rows: repeat(2, 1fr);
+grid-template-rows: repeat(4, 1fr);
 }
-.roll-typeC > .div1 { grid-area: 1 / 1 / 2 / 2; text-align: center;}
-.roll-typeC > .div2 { grid-area: 1 / 2 / 2 / 3; text-align: center;}
-.roll-typeC > .div3 { grid-area: 2 / 1 / 3 / 2; text-align: center;}
-.roll-typeC > .div4 { grid-area: 2 / 2 / 3 / 3; text-align: center;}
+.roll-typeC > .div1 { grid-area: 1 / 1 / 3 / 3; text-align: center; align-self: end;}
+.roll-typeC > .div2 { grid-area: 3 / 1 / 4 / 2; text-align: center;}
+.roll-typeC > .div3 { grid-area: 3 / 2 / 4 / 3; text-align: center;}
+.roll-typeC > .div4 { grid-area: 4 / 1 / 5 / 2; text-align: center;}
+.roll-typeC > .div5 { grid-area: 4 / 2 / 5 / 3; text-align: center;}
 
 .text-section > .roll-typeD {
 display: grid;
@@ -263,6 +274,12 @@ grid-row-gap: 0px;
   body{
     font-size: 1.2rem;
     overflow-y: scroll;
+  }
+  input, button {
+    font-size: 1.2rem;
+  }
+  :lang(zh) {
+    font-size: 1rem;
   }
   ::-webkit-scrollbar {
       width: 0;
