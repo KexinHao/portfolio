@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css?family=Cormorant+Unicase|Fredoka+One|Vollkorn&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Arizonia&display=swap');
+* {
+    /* margin: 10px; */
+}
+
+html,body {
+    /* height: 100%;
+    width: 100%; */
+    background-color: white;
+
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content:flex-start;
+  align-items: center;
+}
+
+
+
+.tech-slideshow {
+  padding-top: 0em;
+  max-width: 400px;
+  width: 100%;
+  height: 30px;
+  max-height: 100%;
+  margin: 0 auto;
+  /* position: relative; */
+  /* overflow: hidden; */
+  /* transform: translate3d(0, 0, 0); */
+  /* animation: moveSlideshow 1s linear infinite; */
+}
+.tech-slideshow  > img {
+    height: 100%;
+    /* width: 100%; */
+    animation: moveSlideshow 9s linear infinite;
+}
+
+@keyframes moveSlideshow {
+  100% {
+    transform: translateX(-66%);
+  }
+}
+
+
+#canvas img{
+  order: 2;
+  /* object-fit:contain; */
+  position:absolute;
+  /* display: block; */
+  left: -100px;
+  top: 110px;
+  width: 100%;
+}
+
+
+/* #horn {
+  position:absolute;
+  display: block;
+  left: 400px;
+  top: 400px;
+  width: 100%;
+} */
+
+
+.name{
+  order:2;
+  color: black;
+  font-family: 'Cormorant Unicase', serif;
+  font-size: 10vh;
+  text-align: center;
+  top:10%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.button{
+  width:100%;
+  order: 99;
+  position:absolute;
+  bottom:10%;
+  color: black;
+  font-family: 'helvatica', sans-serif;
+  font-size: 3vh;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 5fr 5fr 5fr 5fr 5fr 5fr;
+}
+.button>div:hover{
+  background-color: black;
+  color:white;
+  cursor: url("cursors/hurricane.png"), auto;
+}
